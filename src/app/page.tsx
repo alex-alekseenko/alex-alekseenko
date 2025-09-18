@@ -127,24 +127,24 @@ export default function Home() {
       <Navigation currentPage="home" />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
+      <section className="pt-24 pb-12 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center gap-12">
+          <div className="flex flex-col md:flex-row items-center gap-8">
             {/* Left Content */}
             <div className="flex-1 text-center md:text-left">
-              <h1 className="text-5xl md:text-6xl font-bold text-primary-dark mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl font-bold text-primary-dark mb-4 leading-tight">
                 Building
                 <span className="bg-gradient-to-r from-primary-dark to-accent-link bg-clip-text text-transparent"> Global QA Teams </span>
                 & Quality Strategy
               </h1>
-              <p className="text-xl text-primary-text mb-8 leading-relaxed">
+              <p className="text-lg text-primary-text mb-6 leading-relaxed">
                 Head of QA Engineering with 10+ years transforming quality operations
                 through strategic leadership and technical excellence. I specialize in
                 building world-class distributed teams and implementing scalable QA frameworks.
               </p>
 
               {/* Social Links */}
-              <div className="flex items-center justify-center md:justify-start gap-4 mb-8">
+              <div className="flex items-center justify-center md:justify-start gap-4">
                 <a href="mailto:a.alekseenko.personal@gmail.com" className="text-primary-text hover:text-primary-dark transition-colors">
                   <Mail className="h-6 w-6" />
                 </a>
@@ -160,7 +160,7 @@ export default function Home() {
 
             {/* Right Photo */}
             <div className="flex-shrink-0">
-              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-gradient-to-br from-primary-dark/10 to-accent-link/10">
+              <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden bg-gradient-to-br from-primary-dark/10 to-accent-link/10">
                 <Image
                   src="/alex-photo.jpg"
                   alt="Alex Alekseenko"
@@ -175,15 +175,15 @@ export default function Home() {
       </section>
 
       {/* Ideas I'm Exploring */}
-      <section className="px-6 py-20">
+      <section className="px-6 py-12">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-primary-dark mb-12">
+          <h2 className="text-2xl font-bold text-primary-dark mb-8">
             Ideas I&apos;m Actively Exploring
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-6">
             {exploringIdeas.map((idea, index) => (
-              <div key={index} className="bg-background-subtle-gray p-6 rounded-xl hover:shadow-md transition-shadow">
-                <h3 className="text-xl font-semibold text-primary-dark mb-3">
+              <div key={index} className="bg-background-subtle-gray p-4 rounded-xl hover:shadow-md transition-shadow">
+                <h3 className="text-lg font-semibold text-primary-dark mb-2">
                   {idea.title}
                 </h3>
                 <p className="text-primary-text leading-relaxed">
@@ -196,9 +196,9 @@ export default function Home() {
       </section>
 
       {/* Background Section - List View */}
-      <section className="px-6 py-20 bg-white">
+      <section className="px-6 py-12 bg-white">
         <div className="max-w-3xl mx-auto">
-          <div className="flex items-center gap-3 mb-12">
+          <div className="flex items-center gap-3 mb-8">
             <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
             </svg>
@@ -206,7 +206,7 @@ export default function Home() {
               Background
             </h2>
           </div>
-          <div className="space-y-6">
+          <div className="space-y-4">
             {workHistory.map((work, index) => (
               <div key={index} className="flex items-start gap-4">
                 <div className="flex-shrink-0">
@@ -241,7 +241,7 @@ export default function Home() {
           </div>
 
           {/* LinkedIn Link */}
-          <div className="mt-12 pt-8 border-t border-gray-200">
+          <div className="mt-8 pt-6 border-t border-gray-200">
             <a
               href="https://www.linkedin.com/in/alexalekseenko"
               target="_blank"
@@ -259,10 +259,10 @@ export default function Home() {
 
 
       {/* Recent Case Studies */}
-      <section className="px-6 py-20 bg-gray-50">
+      <section className="px-6 py-12 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">
               Recent Case Studies
             </h2>
             <p className="text-lg text-gray-600">
@@ -270,16 +270,16 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid gap-12 lg:gap-16">
+          <div className="grid gap-8 lg:gap-10">
             {recentCaseStudies.map((study, index) => (
-              <div key={index} className="bg-white rounded-3xl p-8 lg:p-12 shadow-sm border">
-                <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              <div key={index} className="bg-white rounded-2xl p-6 lg:p-8 shadow-sm border">
+                <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center">
                   {/* Company Info Card - Always on Left */}
                   <div>
-                    <div className={`relative ${study.bgColor} rounded-2xl p-8 h-full flex items-center justify-center`}>
-                      <div className="bg-white rounded-xl w-full p-8 shadow-lg">
+                    <div className={`relative ${study.bgColor} rounded-xl p-6 h-full flex items-center justify-center`}>
+                      <div className="bg-white rounded-lg w-full p-6 shadow-lg">
                         {/* Company Header */}
-                        <div className="flex items-start gap-4 mb-6">
+                        <div className="flex items-start gap-3 mb-4">
                           <div className="relative w-16 h-16 bg-white rounded-lg overflow-hidden border border-gray-200 flex-shrink-0">
                             <Image
                               src={study.companyLogo}
@@ -320,7 +320,7 @@ export default function Home() {
                         </div>
 
                         {/* Project Context */}
-                        <div className="mt-6 pt-6 border-t border-gray-200">
+                        <div className="mt-4 pt-4 border-t border-gray-200">
                           <div className="flex items-center gap-2 mb-3">
                             <Globe className="w-4 h-4 text-gray-400" />
                             <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Project Context</span>
@@ -344,7 +344,7 @@ export default function Home() {
 
                   {/* Content Side - Always on Right */}
                   <div>
-                    <div className="mb-6">
+                    <div className="mb-4">
                       <span className="text-sm font-medium text-gray-500 uppercase tracking-wide">
                         {study.company}
                       </span>
@@ -356,7 +356,7 @@ export default function Home() {
                       </p>
                     </div>
 
-                    <div className="grid sm:grid-cols-2 gap-6 mb-8">
+                    <div className="grid sm:grid-cols-2 gap-4 mb-6">
                       <div>
                         <h4 className="font-semibold text-gray-900 mb-2">Problem</h4>
                         <p className="text-sm text-gray-600">{study.problem}</p>
@@ -392,7 +392,7 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="text-center mt-16">
+          <div className="text-center mt-10">
             <Link href="/case-studies" className="inline-flex items-center px-8 py-4 border-2 border-gray-900 text-gray-900 rounded-full font-medium hover:bg-gray-900 hover:text-white transition-all">
               View All Case Studies
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -403,18 +403,18 @@ export default function Home() {
 
 
       {/* Contact Section */}
-      <section id="contact" className="px-6 py-20 bg-background-light-gray">
+      <section id="contact" className="px-6 py-12 bg-background-light-gray">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-primary-dark mb-6">
+          <h2 className="text-2xl font-bold text-primary-dark mb-4">
             Let&apos;s Connect
           </h2>
-          <p className="text-xl text-primary-text mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-primary-text mb-8 max-w-2xl mx-auto leading-relaxed">
             Ready to transform your QA operations and build world-class quality teams?
             I&apos;d love to discuss how we can work together.
           </p>
           <a
             href="mailto:a.alekseenko.personal@gmail.com"
-            className="inline-flex items-center px-8 py-4 bg-primary-dark text-white font-medium rounded-lg hover:bg-opacity-90 transition-all"
+            className="inline-flex items-center px-6 py-3 bg-primary-dark text-white font-medium rounded-lg hover:bg-opacity-90 transition-all"
           >
             <Mail className="mr-2 h-5 w-5" />
             Get In Touch
