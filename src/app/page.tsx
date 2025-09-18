@@ -7,20 +7,28 @@ import Footer from "@/components/Footer";
 export default function Home() {
   const exploringIdeas = [
     {
-      title: "AI-Driven QA Automation",
-      description: "Exploring how machine learning can revolutionize test case generation and defect prediction",
+      title: "Democratize QA for SMBs",
+      description: "Making enterprise-grade QA practices accessible and affordable for small and medium businesses",
     },
     {
-      title: "Remote Team Excellence",
-      description: "Developing frameworks for building high-performing distributed QA teams across time zones",
+      title: "AI Adoption for Daily Routine Tasks",
+      description: "Integrating AI tools into everyday workflows to automate repetitive tasks and enhance productivity",
     },
     {
-      title: "Quality Metrics Evolution",
-      description: "Creating next-generation KPIs that align quality outcomes with business value",
+      title: "Video-Coding as Primary Development",
+      description: "Exploring video-first coding practices for better collaboration, documentation, and knowledge sharing",
     },
     {
-      title: "DevOps & Quality Integration",
-      description: "Seamlessly integrating quality practices into CI/CD pipelines and deployment workflows",
+      title: "Claude/Anthropic Enthusiast",
+      description: "Leveraging Claude AI for QA automation, code review, and strategic decision-making processes",
+    },
+    {
+      title: "AI-Driven QA Process",
+      description: "Building intelligent QA workflows that learn from patterns and predict quality issues before they occur",
+    },
+    {
+      title: "Lean Remote Team Management",
+      description: "Outcome-based, metric-driven management approaches for fully distributed QA teams",
     },
   ];
 
@@ -180,7 +188,7 @@ export default function Home() {
           <h2 className="text-2xl font-bold text-primary-dark mb-8">
             Ideas I&apos;m Actively Exploring
           </h2>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {exploringIdeas.map((idea, index) => (
               <div key={index} className="bg-background-subtle-gray p-4 rounded-xl hover:shadow-md transition-shadow">
                 <h3 className="text-lg font-semibold text-primary-dark mb-2">
