@@ -15,7 +15,7 @@ export default function Home() {
       description: "Integrating AI tools into everyday workflows to automate repetitive tasks and enhance productivity",
     },
     {
-      title: "Vibe Coding as Primary Development",
+      title: "Vibe Coding as Primary Development Way",
       description: "Making vibe coding the primary software development approach to accelerate development cycles, validate hypotheses faster, speed up releases, and optimize zero-to-one processes for Lean Team Structure",
     },
     {
