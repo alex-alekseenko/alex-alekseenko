@@ -274,8 +274,8 @@ export default function Home() {
             {recentCaseStudies.map((study, index) => (
               <div key={index} className="bg-white rounded-3xl p-8 lg:p-12 shadow-sm border">
                 <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                  {/* Company Info Card */}
-                  <div className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}>
+                  {/* Company Info Card - Always on Left */}
+                  <div>
                     <div className={`relative ${study.bgColor} rounded-2xl p-8 h-full flex items-center justify-center`}>
                       <div className="bg-white rounded-xl w-full p-8 shadow-lg">
                         {/* Company Header */}
@@ -342,8 +342,8 @@ export default function Home() {
                     </div>
                   </div>
 
-                  {/* Content Side */}
-                  <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
+                  {/* Content Side - Always on Right */}
+                  <div>
                     <div className="mb-6">
                       <span className="text-sm font-medium text-gray-500 uppercase tracking-wide">
                         {study.company}
