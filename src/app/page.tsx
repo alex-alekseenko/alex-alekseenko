@@ -209,8 +209,8 @@ export default function Home() {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {exploringIdeas.map((idea, index) => (
-              <div key={index} className="bg-background-subtle-gray p-4 rounded-xl hover:shadow-md transition-shadow">
-                <h3 className="text-lg font-semibold text-primary-dark mb-2">
+              <div key={index} className="card bg-background-subtle-gray">
+                <h3 className="text-lg font-semibold text-primary-dark mb-3">
                   {idea.title}
                 </h3>
                 <p className="text-primary-text leading-relaxed">
