@@ -16,7 +16,7 @@ export default function Home() {
     },
     {
       title: "Vibe Coding as Primary Development Way",
-      description: "Making vibe coding the primary software development approach to accelerate development cycles, validate hypotheses faster, speed up releases, and optimize zero-to-one processes for Lean Team Structure. Investigating ways to make vibe-coding reliable and applicable for enterprise-level codebases, solving the pain point of unreliable and barely maintainable code",
+      description: "Design a vibe-coding framework that consistently produces reliable, maintainable, and scalable code—ready for enterprise-scale codebases",
     },
     {
       title: "Claude/Anthropic Enthusiast",
