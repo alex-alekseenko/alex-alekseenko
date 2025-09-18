@@ -286,7 +286,7 @@ export default function Home() {
 
 
       {/* Recent Case Studies */}
-      <section className="px-6 py-12 bg-gray-50">
+      <section id="case-studies" className="px-6 py-12 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-2xl font-bold text-gray-900 mb-3">
@@ -419,12 +419,6 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="text-center mt-10">
-            <Link href="/case-studies" className="inline-flex items-center px-8 py-4 border-2 border-gray-900 text-gray-900 rounded-full font-medium hover:bg-gray-900 hover:text-white transition-all">
-              View All Case Studies
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Link>
-          </div>
         </div>
       </section>
 
