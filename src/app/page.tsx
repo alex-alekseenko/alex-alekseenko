@@ -28,7 +28,7 @@ export default function Home() {
     },
     {
       title: "Lean Remote Team Management",
-      description: "Outcome-based, metric-driven management approaches for fully distributed QA teams",
+      description: "Outcome-based, metric-driven management approaches for fully distributed teams with minimal headcount",
     },
   ];
 
