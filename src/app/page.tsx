@@ -299,12 +299,12 @@ export default function Home() {
 
           <div className="grid gap-8 lg:gap-10">
             {recentCaseStudies.map((study, index) => (
-              <div key={index} className="bg-white rounded-2xl p-6 lg:p-8 shadow-sm border">
+              <div key={index} className="bg-white rounded-2xl p-6 lg:p-8 shadow-sm border group">
                 <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center">
                   {/* Company Info Card - Always on Left */}
                   <div>
                     <div className={`relative ${study.bgColor} rounded-xl p-6 h-full flex items-center justify-center`}>
-                      <div className="bg-white rounded-lg w-full p-6 shadow-lg">
+                      <div className="bg-white rounded-lg w-full p-6 shadow-lg transition-transform duration-300 group-hover:scale-105">
                         {/* Company Header */}
                         <div className="flex items-start gap-3 mb-4">
                           <div className="relative w-16 h-16 bg-white rounded-lg overflow-hidden border border-gray-200 flex-shrink-0">
