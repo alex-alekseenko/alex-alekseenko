@@ -16,15 +16,15 @@ export default function Home() {
     },
     {
       title: "Vibe Coding as Primary Development",
-      description: "Exploring vibe-first coding practices for better collaboration, documentation, and knowledge sharing",
+      description: "Making vibe coding the primary software development approach to accelerate development cycles, validate hypotheses faster, speed up releases, and optimize zero-to-one processes for Lean Team Structure",
     },
     {
       title: "Claude/Anthropic Enthusiast",
-      description: "Leveraging Claude AI for QA automation, code review, and strategic decision-making processes",
+      description: "Applying Anthropic patterns and best practices across all use cases, leveraging Claude Code as an agentic system for enhanced development workflows",
     },
     {
       title: "AI-Driven QA Process",
-      description: "Building intelligent QA workflows that learn from patterns and predict quality issues before they occur",
+      description: "Integrating AI assistance across all QA stages to streamline processes, reduce manual work, enable seamless tech team experience, provide immediate quality reports after code changes, and assist with production issue analysis and prevention",
     },
     {
       title: "Lean Remote Team Management",
