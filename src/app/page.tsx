@@ -20,7 +20,7 @@ export default function Home() {
     },
     {
       title: "Claude/Anthropic Enthusiast",
-      description: "Applying Anthropic patterns and best practices across all use cases, leveraging Claude Code as an agentic system for enhanced development workflows",
+      description: "Applying Anthropic patterns and best practices across all use cases, leveraging Claude Code as an agentic system for enhanced business workflows",
     },
     {
       title: "AI-Driven QA Process",
