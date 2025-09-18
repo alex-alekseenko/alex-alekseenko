@@ -15,8 +15,8 @@ export default function Home() {
       description: "Integrating AI tools into everyday workflows to automate repetitive tasks and enhance productivity",
     },
     {
-      title: "Video-Coding as Primary Development",
-      description: "Exploring video-first coding practices for better collaboration, documentation, and knowledge sharing",
+      title: "Vibe Coding as Primary Development",
+      description: "Exploring vibe-first coding practices for better collaboration, documentation, and knowledge sharing",
     },
     {
       title: "Claude/Anthropic Enthusiast",
