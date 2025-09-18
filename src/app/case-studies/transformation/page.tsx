@@ -11,7 +11,7 @@ export default function TransformationCaseStudy() {
       {/* Header */}
       <section className="pt-24 pb-8">
         <div className="container-max">
-          <Link href="/case-studies" className="inline-flex items-center text-primary-text hover:text-primary-dark mb-8">
+          <Link href="/#case-studies" className="inline-flex items-center text-primary-text hover:text-primary-dark mb-8">
             <ArrowLeft className="mr-2 h-5 w-5" />
             Back to Case Studies
           </Link>
@@ -228,7 +228,7 @@ export default function TransformationCaseStudy() {
               <Link href="/#contact" className="btn btn-primary">
                 Discuss Your Challenge
               </Link>
-              <Link href="/case-studies" className="btn btn-secondary">
+              <Link href="/#case-studies" className="btn btn-secondary">
                 View More Case Studies
               </Link>
             </div>

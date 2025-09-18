@@ -13,7 +13,7 @@ export default function Navigation({ currentPage = "home" }: NavigationProps) {
 
   const navItems = [
     { href: "/", label: "Home", id: "home" },
-    { href: "/case-studies", label: "Case Studies", id: "case-studies" },
+    { href: "/#case-studies", label: "Case Studies", id: "case-studies" },
     { href: "/#contact", label: "Contact", id: "contact" },
   ];
 
