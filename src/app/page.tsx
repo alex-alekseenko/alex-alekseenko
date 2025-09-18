@@ -151,7 +151,7 @@ export default function Home() {
       <Navigation currentPage="home" />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-12 px-6">
+      <section className="pt-32 pb-12 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-8">
             {/* Left Content */}
@@ -199,7 +199,7 @@ export default function Home() {
       </section>
 
       {/* Ideas I'm Exploring */}
-      <section className="px-6 py-32">
+      <section className="px-6 py-12">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-primary-dark mb-8">
             Ideas I&apos;m Actively Exploring
