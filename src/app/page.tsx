@@ -156,11 +156,14 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-8">
             {/* Left Content */}
             <div className="flex-1 text-center md:text-left">
-              <h1 className="text-4xl md:text-5xl font-bold text-primary-dark mb-4 leading-tight">
+              <h1 className="text-4xl md:text-5xl font-bold text-primary-dark mb-2 leading-tight">
                 Building
                 <span className="bg-gradient-to-r from-primary-dark to-accent-link bg-clip-text text-transparent"> Global QA Teams </span>
                 & Quality Strategy
               </h1>
+              <p className="text-xl text-primary-text mb-4 font-medium">
+                A Dubai-based Tech Expert & AI Engineer building GenAI-native systems, agentic QA assistant, and practicing vibe-coding along the way
+              </p>
               <p className="text-lg text-primary-text mb-6 leading-relaxed">
                 Head of QA Engineering with 10+ years transforming quality operations
                 through strategic leadership and technical excellence. I specialize in
