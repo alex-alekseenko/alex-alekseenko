@@ -286,7 +286,7 @@ export default function Home() {
 
 
       {/* Recent Case Studies */}
-      <section id="case-studies" className="px-6 py-12 bg-gray-50">
+      <section id="case-studies" className="px-6 py-12 bg-gray-50 scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-2xl font-bold text-gray-900 mb-3">
