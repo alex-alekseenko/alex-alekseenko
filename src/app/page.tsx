@@ -24,7 +24,7 @@ export default function Home() {
     },
     {
       title: "AI-Driven QA Process",
-      description: "Integrating AI assistance across all QA stages to streamline processes, reduce manual work, enable seamless tech team experience, provide immediate quality reports after code changes, and assist with production issue analysis and prevention",
+      description: "Inject AI at every QA touchpoint across the SDLC to automate checks and validations, then produce instant, explainable quality reports on each change—including a prioritized defect list with root-cause analysis",
     },
     {
       title: "Lean Remote Team Management",
