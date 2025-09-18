@@ -64,6 +64,22 @@ export default function Home() {
       location: "Moscow, Russia",
       logoPath: "/company-logos/align.jpg",
       bgColor: "bg-white"
+    },
+    {
+      period: "2015 — 2017",
+      title: "QA Automation Engineer",
+      company: "Axcient",
+      location: "Moscow, Russia",
+      logoPath: "/company-logos/axcient.jpg",
+      bgColor: "bg-white"
+    },
+    {
+      period: "2010 — 2015",
+      title: "Bachelor's Degree in Computer Science",
+      company: "Moscow State University",
+      location: "Moscow, Russia",
+      logoPath: "/company-logos/msu.jpg",
+      bgColor: "bg-white"
     }
   ];
 
@@ -173,7 +189,7 @@ export default function Home() {
                   src="/alex-photo.jpg"
                   alt="Alex Alekseenko"
                   fill
-                  className="object-cover"
+                  className="object-cover scale-115"
                   priority
                 />
               </div>
@@ -183,7 +199,7 @@ export default function Home() {
       </section>
 
       {/* Ideas I'm Exploring */}
-      <section className="px-6 py-12">
+      <section className="px-6 py-16">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-primary-dark mb-8">
             Ideas I&apos;m Actively Exploring
