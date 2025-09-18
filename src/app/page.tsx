@@ -70,7 +70,7 @@ export default function Home() {
       title: "QA Automation Engineer",
       company: "Axcient",
       location: "Smolensk, Russia",
-      logoPath: "/company-logos/axcient_logo.jpg",
+      logoPath: "/company-logos/align.jpg",
       bgColor: "bg-white"
     },
     {
@@ -78,7 +78,7 @@ export default function Home() {
       title: "Master's Degree in Applied Mathematics & Computer Science",
       company: "Smolensk State University",
       location: "Smolensk, Russia",
-      logoPath: "/company-logos/smolgu.jpg",
+      logoPath: "/company-logos/align.jpg",
       bgColor: "bg-white"
     }
   ];
