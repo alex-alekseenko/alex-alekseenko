@@ -1,299 +1,296 @@
 import Link from "next/link";
+import { ArrowLeft, Calendar, Building, Code, Zap, Target } from "lucide-react";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 export default function AutomationCaseStudy() {
   return (
     <div className="min-h-screen">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
-        <div className="max-w-6xl mx-auto px-6 py-4">
-          <div className="flex justify-between items-center">
-            <div className="text-xl font-semibold text-gray-900">Alex Alekseenko</div>
-            <ul className="hidden md:flex space-x-8">
-              <li><Link href="/" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">Home</Link></li>
-              <li><Link href="/#expertise" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">Expertise</Link></li>
-              <li><Link href="/case-studies" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">Case Studies</Link></li>
-              <li><Link href="/#experience" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">Experience</Link></li>
-              <li><Link href="/#contact" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">Contact</Link></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Header */}
-      <section className="pt-20 pb-12 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="flex items-center space-x-2 text-sm text-gray-500 mb-6">
-            <Link href="/" className="hover:text-blue-600">Home</Link>
-            <span>/</span>
-            <Link href="/case-studies" className="hover:text-blue-600">Case Studies</Link>
-            <span>/</span>
-            <span>Enterprise Test Automation Architecture</span>
-          </div>
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Enterprise Test Automation Architecture</h1>
-          <div className="flex flex-wrap gap-4">
-            <span className="bg-blue-600 text-white px-4 py-1 rounded-full font-medium">SberDevices</span>
-            <span className="text-gray-600">2020-2022</span>
-            <span className="text-gray-600">Banking / Smart Devices</span>
+      <section className="pt-24 pb-8">
+        <div className="container-max">
+          <Link href="/#case-studies" className="inline-flex items-center text-primary-text hover:text-primary-dark mb-8">
+            <ArrowLeft className="mr-2 h-5 w-5" />
+            Back to Case Studies
+          </Link>
+
+          <div className="max-w-4xl">
+            <div className="flex flex-wrap gap-4 mb-6">
+              <span className="px-3 py-1 bg-primary-dark text-white text-sm font-medium rounded-full">
+                SberDevices
+              </span>
+              <span className="px-3 py-1 bg-background-light-gray text-primary-text text-sm font-medium rounded-full flex items-center">
+                <Calendar className="mr-2 h-4 w-4" />
+                2020-2022
+              </span>
+              <span className="px-3 py-1 bg-background-light-gray text-primary-text text-sm font-medium rounded-full flex items-center">
+                <Building className="mr-2 h-4 w-4" />
+                900-person startup
+              </span>
+            </div>
+
+            <h1 className="text-4xl md:text-5xl font-medium mb-6 text-primary-dark">
+              Enterprise Test Automation Architecture for Smart Devices
+            </h1>
+
+            <p className="text-xl text-primary-text leading-relaxed">
+              Building comprehensive test automation from scratch for a major banking innovation department
+              developing smart devices to compete with Amazon Alexa.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Overview */}
-      <section className="py-12 border-b border-gray-200">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div className="text-center bg-gray-50 p-4 rounded-lg">
-              <h3 className="text-sm text-gray-500 mb-2 uppercase tracking-wide">Company Size</h3>
-              <p className="text-lg font-semibold text-gray-900">900 People</p>
+      {/* Key Metrics */}
+      <section className="py-8 bg-background-light-gray">
+        <div className="container-max">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="text-3xl font-bold text-primary-dark mb-2">95%</div>
+              <div className="text-primary-text">Time reduction</div>
             </div>
-            <div className="text-center bg-gray-50 p-4 rounded-lg">
-              <h3 className="text-sm text-gray-500 mb-2 uppercase tracking-wide">Test Scenarios</h3>
-              <p className="text-lg font-semibold text-gray-900">1,670+</p>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-primary-dark mb-2">1,670+</div>
+              <div className="text-primary-text">Test scenarios automated</div>
             </div>
-            <div className="text-center bg-gray-50 p-4 rounded-lg">
-              <h3 className="text-sm text-gray-500 mb-2 uppercase tracking-wide">Time Reduction</h3>
-              <p className="text-lg font-semibold text-gray-900">95%</p>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-primary-dark mb-2">90 min</div>
+              <div className="text-primary-text">Regression cycle time</div>
             </div>
-            <div className="text-center bg-gray-50 p-4 rounded-lg">
-              <h3 className="text-sm text-gray-500 mb-2 uppercase tracking-wide">Team Built</h3>
-              <p className="text-lg font-semibold text-gray-900">14 Engineers</p>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-primary-dark mb-2">14</div>
+              <div className="text-primary-text">Team members built</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Content */}
-      <section className="py-16">
-        <div className="max-w-4xl mx-auto px-6">
-          
-          {/* Challenge */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-semibold text-gray-900 mb-6">The Challenge</h2>
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              SberDevices, a 900-person startup within Russia&apos;s largest bank, was building a smart device ecosystem 
-              to compete with Amazon Alexa. As Head of QA Automation, I needed to build enterprise-level test automation 
-              from scratch within a regulated banking environment.
-            </p>
-            
-            <ul className="space-y-4">
-              <li className="border-b border-gray-200 pb-4">
-                <strong className="text-gray-900">Greenfield Challenge:</strong> No existing automation infrastructure for complex IoT and voice assistant testing
-              </li>
-              <li className="border-b border-gray-200 pb-4">
-                <strong className="text-gray-900">Regulatory Compliance:</strong> Banking industry requirements for security, audit trails, and controlled environments
-              </li>
-              <li className="border-b border-gray-200 pb-4">
-                <strong className="text-gray-900">Technology Complexity:</strong> Testing voice interactions, IoT devices, mobile apps, and cloud services in an integrated ecosystem
-              </li>
-              <li className="border-b border-gray-200 pb-4">
-                <strong className="text-gray-900">Scale Requirements:</strong> Support for rapid product development cycles and multiple device types simultaneously
-              </li>
-            </ul>
-          </div>
+      <section className="section-padding">
+        <div className="container-max">
+          <div className="max-w-4xl mx-auto space-y-12">
 
-          {/* Approach */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-semibold text-gray-900 mb-6">Technical Architecture</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <div className="bg-gray-50 p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-blue-600 mb-4">Voice Testing Framework</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• Speech-to-text accuracy validation</li>
-                  <li>• Intent recognition testing</li>
-                  <li>• Multi-language voice command validation</li>
-                  <li>• Audio quality and noise filtering tests</li>
-                </ul>
-              </div>
-              
-              <div className="bg-gray-50 p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-blue-600 mb-4">IoT Device Testing</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• Hardware-in-the-loop testing setup</li>
-                  <li>• Device firmware validation</li>
-                  <li>• Connectivity and protocol testing</li>
-                  <li>• Performance under various conditions</li>
-                </ul>
-              </div>
-              
-              <div className="bg-gray-50 p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-blue-600 mb-4">Integration Testing</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• End-to-end ecosystem validation</li>
-                  <li>• API integration testing</li>
-                  <li>• Cross-platform compatibility</li>
-                  <li>• Security and data flow validation</li>
-                </ul>
-              </div>
-              
-              <div className="bg-gray-50 p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-blue-600 mb-4">CI/CD Integration</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• Automated build validation</li>
-                  <li>• Regression test execution</li>
-                  <li>• Environment provisioning</li>
-                  <li>• Deployment verification</li>
-                </ul>
+            {/* Situation */}
+            <div>
+              <h2 className="text-2xl font-semibold text-primary-dark mb-6 flex items-center">
+                <Building className="mr-3 h-6 w-6" />
+                The Situation
+              </h2>
+              <div className="prose prose-lg text-primary-text leading-relaxed">
+                <p>
+                  I joined a major Russian bank&apos;s new innovation department focused on developing smart devices
+                  and voice assistants, essentially a 900-person startup operating within a regulated banking environment.
+                  The department was tasked with creating a competitive product to rival Amazon Alexa, targeting both
+                  consumer markets and specialized hotel solutions.
+                </p>
+                <p>
+                  When I arrived, testing was entirely fragmented—developers performed ad-hoc testing based on individual
+                  preferences, with no standardized approach or reusable assets. Manual QA teams were overwhelmed by growing
+                  regression needs, with each incremental change requiring significant validation effort.
+                </p>
+                <p>
+                  The initiative was barely a year old with no production release yet, but faced aggressive go-to-market
+                  timelines and high executive visibility as a flagship innovation project for the bank.
+                </p>
               </div>
             </div>
 
-            <div className="bg-blue-50 p-6 rounded-xl">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Technology Stack</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Core Technologies</h4>
-                  <ul className="space-y-1 text-sm text-gray-700">
-                    <li>Java & Kotlin</li>
-                    <li>Selenium WebDriver</li>
-                    <li>TestNG & JUnit</li>
-                    <li>REST Assured</li>
-                  </ul>
+            {/* Challenge */}
+            <div>
+              <h2 className="text-2xl font-semibold text-primary-dark mb-6 flex items-center">
+                <Target className="mr-3 h-6 w-6" />
+                The Challenge
+              </h2>
+              <div className="prose prose-lg text-primary-text leading-relaxed">
+                <p>
+                  I faced multilayered challenges requiring both technical and organizational solutions:
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li><strong>Regulatory constraints:</strong> Enterprise banking environment where every access request required weeks of compliance reviews</li>
+                  <li><strong>Greenfield build:</strong> No existing test automation team or infrastructure to build upon</li>
+                  <li><strong>Technology diversity:</strong> Web applications, Android devices, voice assistants with NLP, complex backend integrations</li>
+                  <li><strong>Cultural resistance:</strong> Development teams accustomed to their own testing approaches</li>
+                  <li><strong>Aggressive timelines:</strong> Pressure to capture market share before competitors</li>
+                </ul>
+                <p>
+                  The solution needed to cover disparate technologies while building trust with development teams and
+                  establishing a new centralized automation function from scratch.
+                </p>
+              </div>
+            </div>
+
+            {/* Technical Architecture */}
+            <div>
+              <h2 className="text-2xl font-semibold text-primary-dark mb-6 flex items-center">
+                <Code className="mr-3 h-6 w-6" />
+                Technical Architecture
+              </h2>
+              <div className="space-y-6">
+                <p className="text-lg text-primary-text">
+                  I developed a comprehensive multi-framework architecture with purpose-built solutions for each testing domain:
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="card bg-background-subtle-gray">
+                    <h3 className="font-semibold text-primary-dark mb-3 flex items-center">
+                      <Code className="mr-2 h-5 w-5" />
+                      Web UI Framework
+                    </h3>
+                    <p className="text-primary-text">
+                      Java-based framework with optimized Selenium implementation for web application testing
+                    </p>
+                  </div>
+
+                  <div className="card bg-background-subtle-gray">
+                    <h3 className="font-semibold text-primary-dark mb-3 flex items-center">
+                      <Zap className="mr-2 h-5 w-5" />
+                      API Integration
+                    </h3>
+                    <p className="text-primary-text">
+                      Dedicated API/integration framework with configurable mock server using JSON schema
+                    </p>
+                  </div>
+
+                  <div className="card bg-background-subtle-gray">
+                    <h3 className="font-semibold text-primary-dark mb-3 flex items-center">
+                      <Code className="mr-2 h-5 w-5" />
+                      Android Framework
+                    </h3>
+                    <p className="text-primary-text">
+                      Kotlin-based Android UI E2E testing framework aligned with native app development
+                    </p>
+                  </div>
+
+                  <div className="card bg-background-subtle-gray">
+                    <h3 className="font-semibold text-primary-dark mb-3 flex items-center">
+                      <Zap className="mr-2 h-5 w-5" />
+                      Parallel Execution
+                    </h3>
+                    <p className="text-primary-text">
+                      Scalable execution architectures supporting 40 concurrent test threads for maximum throughput
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Voice & IoT</h4>
-                  <ul className="space-y-1 text-sm text-gray-700">
-                    <li>Speech Recognition APIs</li>
-                    <li>MQTT Protocol Testing</li>
-                    <li>Device Simulators</li>
-                    <li>Audio Processing Tools</li>
-                  </ul>
+              </div>
+            </div>
+
+            {/* Strategy */}
+            <div>
+              <h2 className="text-2xl font-semibold text-primary-dark mb-6">
+                Implementation Strategy
+              </h2>
+              <div className="space-y-6">
+                <div className="card bg-background-white border border-background-light-gray">
+                  <h3 className="font-semibold text-primary-dark mb-3">Team Structure</h3>
+                  <p className="text-primary-text">
+                    Built and led a 14-person automation team structured to balance specialization with cross-training—each
+                    engineer owned a specific domain area (web, Android, API integration, NLP) while contributing to core
+                    framework development.
+                  </p>
                 </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Infrastructure</h4>
-                  <ul className="space-y-1 text-sm text-gray-700">
-                    <li>Jenkins CI/CD</li>
-                    <li>Docker Containers</li>
-                    <li>TestRail Management</li>
-                    <li>Allure Reporting</li>
-                  </ul>
+
+                <div className="card bg-background-white border border-background-light-gray">
+                  <h3 className="font-semibold text-primary-dark mb-3">Phased Rollout</h3>
+                  <p className="text-primary-text">
+                    Implemented strategic rollout approach, working with one development team at a time, starting with
+                    web applications as the foundation to build trust and demonstrate value.
+                  </p>
+                </div>
+
+                <div className="card bg-background-white border border-background-light-gray">
+                  <h3 className="font-semibold text-primary-dark mb-3">Support-First Positioning</h3>
+                  <p className="text-primary-text">
+                    Positioned the automation initiative as a support function rather than oversight mechanism, emphasizing
+                    our role in &quot;taking headaches away&quot; from development teams.
+                  </p>
+                </div>
+
+                <div className="card bg-background-white border border-background-light-gray">
+                  <h3 className="font-semibold text-primary-dark mb-3">Risk-Based Prioritization</h3>
+                  <p className="text-primary-text">
+                    Prioritized automation efforts based on business risk and release schedule requirements, focusing on
+                    high-value regression scenarios first.
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Implementation */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-semibold text-gray-900 mb-6">Implementation Phases</h2>
-            
-            <div className="space-y-6">
-              <div className="bg-gray-50 p-4 rounded-xl">
-                <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium mb-3 inline-block">Phase 1: Foundation</span>
-                <h3 className="text-lg font-semibold text-blue-600 mb-2">Infrastructure & Team Building</h3>
-                <p className="text-gray-600">Established core automation framework, hired and trained initial team of 6 engineers, set up development and testing environments within banking security constraints.</p>
-              </div>
-              
-              <div className="bg-gray-50 p-4 rounded-xl">
-                <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium mb-3 inline-block">Phase 2: Core Testing</span>
-                <h3 className="text-lg font-semibold text-blue-600 mb-2">Voice & Device Automation</h3>
-                <p className="text-gray-600">Developed specialized testing frameworks for voice recognition, built hardware-in-the-loop testing setup, created device simulation environment for various smart home devices.</p>
-              </div>
-              
-              <div className="bg-gray-50 p-4 rounded-xl">
-                <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium mb-3 inline-block">Phase 3: Integration</span>
-                <h3 className="text-lg font-semibold text-blue-600 mb-2">End-to-End Ecosystem Testing</h3>
-                <p className="text-gray-600">Integrated all testing components into unified pipeline, expanded team to 14 engineers, achieved 1,670+ automated test scenarios covering the complete product ecosystem.</p>
-              </div>
-              
-              <div className="bg-gray-50 p-4 rounded-xl">
-                <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium mb-3 inline-block">Phase 4: Optimization</span>
-                <h3 className="text-lg font-semibold text-blue-600 mb-2">Performance & Scalability</h3>
-                <p className="text-gray-600">Optimized test execution to 90-minute regression cycles, implemented parallel testing strategies, established comprehensive reporting and analytics system.</p>
-              </div>
-            </div>
-          </div>
+            {/* Results */}
+            <div>
+              <h2 className="text-2xl font-semibold text-primary-dark mb-6">
+                Transformational Results
+              </h2>
+              <div className="prose prose-lg text-primary-text leading-relaxed">
+                <p>
+                  The framework we built transformed testing capabilities across the entire smart devices division,
+                  delivering measurable business impact:
+                </p>
 
-          {/* Results */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-semibold text-gray-900 mb-6">Results & Impact</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-gray-50 p-6 rounded-xl text-center">
-                <div className="text-3xl text-green-600 mb-2">⚡</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">95% Time Reduction</h3>
-                <p className="text-gray-600">From 18 hours to 90 minutes for full regression testing</p>
-              </div>
-              
-              <div className="bg-gray-50 p-6 rounded-xl text-center">
-                <div className="text-3xl text-green-600 mb-2">🎯</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">1,670+ Scenarios</h3>
-                <p className="text-gray-600">Comprehensive test coverage across all product lines</p>
-              </div>
-              
-              <div className="bg-gray-50 p-6 rounded-xl text-center">
-                <div className="text-3xl text-green-600 mb-2">👥</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Team of 14</h3>
-                <p className="text-gray-600">Built and scaled high-performing automation team</p>
-              </div>
-            </div>
+                <div className="grid md:grid-cols-2 gap-6 my-8">
+                  <div className="card bg-accent-success/10 border-l-4 border-accent-success">
+                    <h3 className="font-semibold text-primary-dark mb-3">Coverage Achievements</h3>
+                    <ul className="space-y-2 text-primary-text">
+                      <li>• 100% automation of voice assistant testing (1,670+ scenarios)</li>
+                      <li>• Complete web-based testing automation (1,200+ scenarios)</li>
+                      <li>• 56% API/integration testing coverage</li>
+                      <li>• 80% Android UI testing automation (190 scenarios)</li>
+                    </ul>
+                  </div>
 
-            <div className="mt-8 bg-blue-50 p-6 rounded-xl">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Business Impact</h3>
-              <ul className="space-y-2 text-gray-700">
-                <li><strong>Release Velocity:</strong> Enabled daily releases with confidence through comprehensive automated validation</li>
-                <li><strong>Quality Assurance:</strong> Achieved consistent quality across complex IoT ecosystem competing with market leaders</li>
-                <li><strong>Cost Efficiency:</strong> Reduced testing costs by 95% while increasing coverage and reliability</li>
-                <li><strong>Market Readiness:</strong> Supported successful product launch competing directly with Amazon Alexa in Russian market</li>
-              </ul>
-            </div>
-          </div>
+                  <div className="card bg-accent-success/10 border-l-4 border-accent-success">
+                    <h3 className="font-semibold text-primary-dark mb-3">Efficiency Gains</h3>
+                    <ul className="space-y-2 text-primary-text">
+                      <li>• 95% reduction in regression testing time (2 days → 90 minutes)</li>
+                      <li>• 40 concurrent test threads execution</li>
+                      <li>• Monthly stakeholder demonstrations enabled</li>
+                      <li>• Critical release blockers consistently caught pre-release</li>
+                    </ul>
+                  </div>
+                </div>
 
-          {/* Technical Innovation */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-semibold text-gray-900 mb-6">Technical Innovations</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-gray-50 p-6 rounded-xl">
-                <h3 className="text-lg font-semibold text-blue-600 mb-2">Voice Testing Breakthrough</h3>
-                <p className="text-gray-600">Developed industry-first automated voice command testing framework that could validate speech recognition accuracy, intent parsing, and response generation in multiple languages simultaneously.</p>
-              </div>
-              
-              <div className="bg-gray-50 p-6 rounded-xl">
-                <h3 className="text-lg font-semibold text-blue-600 mb-2">Hardware Integration</h3>
-                <p className="text-gray-600">Created hardware-in-the-loop testing system that could simulate various IoT devices and test real-world scenarios including network interruptions and device failures.</p>
-              </div>
-              
-              <div className="bg-gray-50 p-6 rounded-xl">
-                <h3 className="text-lg font-semibold text-blue-600 mb-2">Parallel Execution</h3>
-                <p className="text-gray-600">Implemented intelligent test parallelization that reduced execution time from 18 hours to 90 minutes while maintaining test reliability and comprehensive coverage.</p>
-              </div>
-              
-              <div className="bg-gray-50 p-6 rounded-xl">
-                <h3 className="text-lg font-semibold text-blue-600 mb-2">Banking Compliance</h3>
-                <p className="text-gray-600">Designed automation architecture that met stringent banking security requirements including audit trails, data encryption, and controlled environment testing.</p>
+                <p>
+                  The automation framework became fundamental to maintaining release cadence and enabling monthly
+                  stakeholder demonstrations. Executives were amazed by areas where automation was complete while
+                  pushing for acceleration in areas still in progress.
+                </p>
+
+                <p>
+                  Most importantly, the framework consistently caught critical issues before release—from broken
+                  voice assistant skills to mid-flow Android UI failures and backward compatibility breaks—proving
+                  its value in a startup environment where rapid changes often introduced unexpected defects across
+                  the technology stack.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Navigation */}
-      <section className="py-12 border-t border-gray-200">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="flex justify-between items-center">
-            <Link 
-              href="/case-studies/transformation" 
-              className="text-blue-600 font-semibold hover:-translate-x-1 transition-transform inline-flex items-center"
-            >
-              ← Previous Case Study
-            </Link>
-            <div className="flex space-x-4">
-              <Link 
-                href="/case-studies/metrics" 
-                className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-              >
-                Next Case Study →
+      {/* CTA */}
+      <section className="section-padding bg-background-light-gray">
+        <div className="container-max">
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="text-3xl font-medium mb-6 text-primary-dark">
+              Need Enterprise Test Automation?
+            </h2>
+            <p className="text-lg text-primary-text mb-8">
+              I specialize in building scalable test automation architectures from the ground up for complex technology stacks.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/#contact" className="btn btn-primary">
+                Discuss Your Architecture
+              </Link>
+              <Link href="/#case-studies" className="btn btn-secondary">
+                View More Case Studies
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-6">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <p>&copy; 2025 Alex Alekseenko. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
