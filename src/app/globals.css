@@ -1,26 +1,171 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Color Palette from style-guide.md */
+  --color-primary-dark: #121512;
+  --color-primary-text: #525252;
+  --color-primary-black: #1E1E1E;
+
+  --color-bg-white: #FFFFFF;
+  --color-bg-light-gray: #F3F3F3;
+  --color-bg-subtle-gray: #F5F5F5;
+
+  --color-dark-gray: #3A3A3A;
+  --color-medium-gray: #323232;
+  --color-charcoal: #4D4D4D;
+
+  --color-success: #4BDD5C;
+  --color-link: #0000EE;
+  --color-black: #000000;
+
+  /* Spacing Scale (8px base) */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 100%;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.12);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    font-family: "Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--color-primary-text);
+    background-color: var(--color-bg-white);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-primary-dark);
+    font-weight: 500;
+  }
+
+  /* Focus states for accessibility */
+  *:focus-visible {
+    outline: 2px solid var(--color-link);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
+
+  /* Link styles */
+  a {
+    color: var(--color-link);
+    text-decoration: none;
+    transition: var(--transition-base);
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  /* Container utilities */
+  .container-max {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 var(--space-xl);
+  }
+
+  @media (max-width: 640px) {
+    .container-max {
+      padding: 0 var(--space-md);
+    }
+  }
+
+  /* Section padding */
+  .section-padding {
+    padding: var(--space-3xl) 0;
+  }
+
+  @media (max-width: 640px) {
+    .section-padding {
+      padding: var(--space-2xl) 0;
+    }
+  }
+
+  /* Button styles */
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium border border-transparent rounded-md transition-all duration-base;
+  }
+
+  .btn-primary {
+    @apply bg-primary-dark text-white hover:bg-neutral-charcoal hover:-translate-y-0.5 focus:ring-2 focus:ring-accent-link focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-primary-text text-primary-text hover:bg-primary-text hover:text-white;
+  }
+
+  .btn-ghost {
+    @apply text-primary-dark hover:bg-background-subtle-gray;
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-background-subtle-gray rounded-lg p-6 transition-all duration-base hover:shadow-lg hover:-translate-y-1;
+  }
+
+  /* Animation utilities */
+  .animate-fade-in {
+    animation: fade-in var(--transition-slow) ease-out;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-light-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-medium-gray);
+  border-radius: var(--radius-md);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-charcoal);
 }

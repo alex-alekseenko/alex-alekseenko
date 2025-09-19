@@ -47,3 +47,5 @@ CLAUDE.md
 
 # Context files (if they contain sensitive info)
 /context/
+
+.vercel
