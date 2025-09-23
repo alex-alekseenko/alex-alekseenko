@@ -37,7 +37,7 @@ export default function Home() {
       period: "2022 — Present",
       title: "Head of QA Engineering",
       company: "CloudGeometry",
-      location: "Remote",
+      location: "Sunnyvale, CA • Remote",
       logoPath: "/company-logos/cloudgeometry_logo.jpg",
       bgColor: "bg-white"
     },
@@ -45,7 +45,7 @@ export default function Home() {
       period: "2020 — 2022",
       title: "Head of QA Automation",
       company: "SberDevices",
-      location: "Remote",
+      location: "Moscow, Russia • Remote",
       logoPath: "/company-logos/sberdevices_logo.jpg",
       bgColor: "bg-white"
     },
