@@ -175,7 +175,7 @@ export default function Home() {
                 <a href="mailto:a.alekseenko.personal@gmail.com" className="text-primary-text hover:text-primary-dark transition-colors">
                   <Mail className="h-6 w-6" />
                 </a>
-                <a href="https://www.linkedin.com/in/alexalekseenko" target="_blank" rel="noopener noreferrer" className="text-primary-text hover:text-primary-dark transition-colors">
+                <a href="https://www.linkedin.com/in/alex-alekseenko/" target="_blank" rel="noopener noreferrer" className="text-primary-text hover:text-primary-dark transition-colors">
                   <Linkedin className="h-6 w-6" />
                 </a>
                 <div className="flex items-center text-primary-text">
@@ -270,7 +270,7 @@ export default function Home() {
           {/* LinkedIn Link */}
           <div className="mt-8 pt-6 border-t border-gray-200">
             <a
-              href="https://www.linkedin.com/in/alexalekseenko"
+              href="https://www.linkedin.com/in/alex-alekseenko/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-base text-gray-700 hover:text-gray-900 transition-colors"
