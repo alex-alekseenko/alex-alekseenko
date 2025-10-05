@@ -306,26 +306,29 @@ export default function TransformationCaseStudy3() {
                   <h2 className="text-3xl font-bold text-primary-dark">The Result</h2>
                 </div>
 
-                <div className="space-y-6 text-lg text-primary-text leading-relaxed mb-8">
-                  <p>
-                    What once seemed like an impossible challenge—rebuilding an entire QA function while keeping five product lines running—transformed into one of our greatest achievements. Within <mark className="marker-highlight">6-7 months</mark>, the team not only survived but emerged stronger, with <mark className="marker-highlight">all quality metrics intact</mark> despite the storm we'd weathered.
-                  </p>
-                  <p>
-                    The moment when <mark className="marker-highlight">client feedback began highlighting our seamless transition</mark>—unaware of the behind-the-scenes upheaval—felt like finally reaching solid ground after months at sea. The approach of working through key team members proved invaluable, creating islands of stability that others could cling to during uncertainty.
-                  </p>
-                  <p>
-                    Most telling was watching team members who once questioned their future begin <mark className="marker-highlight">taking ownership of their new roles</mark>, creating a resilient multinational quality organization where <mark className="marker-highlight">language and cultural differences became strengths</mark> rather than barriers.
-                  </p>
-                </div>
+                {/* White content box */}
+                <div className="bg-white rounded-2xl p-8 shadow-md mb-8">
+                  <div className="space-y-6 text-lg text-primary-text leading-relaxed">
+                    <p>
+                      What once seemed like an impossible challenge—rebuilding an entire QA function while keeping five product lines running—transformed into one of our greatest achievements. Within <mark className="marker-highlight">6-7 months</mark>, the team not only survived but emerged stronger, with <mark className="marker-highlight">all quality metrics intact</mark> despite the storm we'd weathered.
+                    </p>
+                    <p>
+                      The moment when <mark className="marker-highlight">client feedback began highlighting our seamless transition</mark>—unaware of the behind-the-scenes upheaval—felt like finally reaching solid ground after months at sea. The approach of working through key team members proved invaluable, creating islands of stability that others could cling to during uncertainty.
+                    </p>
+                    <p>
+                      Most telling was watching team members who once questioned their future begin <mark className="marker-highlight">taking ownership of their new roles</mark>, creating a resilient multinational quality organization where <mark className="marker-highlight">language and cultural differences became strengths</mark> rather than barriers.
+                    </p>
+                  </div>
 
-                <div className="bg-primary-dark text-white rounded-2xl p-8 mb-8">
-                  <h3 className="text-xl font-semibold mb-4 flex items-center gap-3">
-                    <Sparkles className="h-6 w-6" />
-                    Key Insight
-                  </h3>
-                  <p className="text-lg leading-relaxed">
-                    Perhaps the most powerful lesson: in crisis lies opportunity—what started as an unwelcome disruption ultimately created a more adaptable, diverse quality team better positioned for future challenges.
-                  </p>
+                  <div className="mt-6 pt-6 border-t border-background-light-gray">
+                    <div className="flex items-center gap-3 mb-3">
+                      <Sparkles className="h-6 w-6 text-primary-dark" />
+                      <h3 className="text-xl font-semibold text-primary-dark">Key Insight</h3>
+                    </div>
+                    <p className="text-base text-primary-text leading-relaxed">
+                      Perhaps the most powerful lesson: in crisis lies opportunity—what started as an unwelcome disruption ultimately created a more adaptable, diverse quality team better positioned for future challenges.
+                    </p>
+                  </div>
                 </div>
 
                 {/* Success Metrics */}
