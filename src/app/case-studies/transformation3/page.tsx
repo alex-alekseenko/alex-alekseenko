@@ -254,18 +254,23 @@ export default function TransformationCaseStudy3() {
                     >
                       {isExpanded && (
                         <div
-                          className="fixed inset-0 bg-black/50 z-40 animate-fade-in"
+                          className="fixed inset-0 bg-black/50 z-40 transition-opacity duration-500"
                           onClick={() => setExpandedCard(null)}
                         />
                       )}
                       <div
                         onClick={() => setExpandedCard(isExpanded ? null : strategy.id)}
                         className={`
-                          bg-white rounded-xl p-6 shadow-lg
-                          transition-all duration-700 ease-out cursor-pointer
-                          ${isExpanded ? 'fixed inset-0 m-auto max-w-2xl max-h-[80vh] overflow-y-auto z-50 scale-100' : 'hover:scale-105 hover:shadow-xl'}
+                          bg-white rounded-xl p-6 shadow-lg cursor-pointer
+                          transition-all duration-500 ease-in-out
+                          ${isExpanded ? 'fixed z-50 max-w-2xl max-h-[80vh] overflow-y-auto' : 'hover:scale-105 hover:shadow-xl'}
                         `}
-                        style={isExpanded ? { top: '50%', left: '50%', transform: 'translate(-50%, -50%) scale(1.1)' } : {}}
+                        style={isExpanded ? {
+                          top: '50%',
+                          left: '50%',
+                          transform: 'translate(-50%, -50%) scale(1.2)',
+                          width: '640px'
+                        } : {}}
                       >
                         <div className={`w-full h-2 bg-gradient-to-r ${strategy.color} rounded-full mb-4`}></div>
 
