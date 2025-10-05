@@ -199,7 +199,17 @@ export default function AutomationCaseStudy1() {
 
                 <div className="space-y-6 text-lg text-primary-text leading-relaxed mb-8">
                   <p>
-                    I faced <mark className="marker-highlight">multilayered challenges</mark> requiring both technical and organizational solutions to build an <mark className="marker-highlight">enterprise test automation architecture from the ground up</mark>.
+                    I faced <mark className="marker-highlight">multilayered challenges</mark> requiring both technical and organizational solutions:
+                  </p>
+                  <ul className="list-disc list-inside space-y-2 ml-4">
+                    <li><strong>Regulatory constraints:</strong> Enterprise banking environment where every access request required weeks of compliance reviews</li>
+                    <li><strong>Greenfield build:</strong> No existing test automation team or infrastructure to build upon</li>
+                    <li><strong>Technology diversity:</strong> Web applications, Android devices, voice assistants with NLP, complex backend integrations</li>
+                    <li><strong>Cultural resistance:</strong> Development teams accustomed to their own testing approaches</li>
+                    <li><strong>Aggressive timelines:</strong> Pressure to capture market share before competitors</li>
+                  </ul>
+                  <p>
+                    The solution needed to cover disparate technologies while building trust with development teams and establishing a new centralized automation function from scratch.
                   </p>
                 </div>
 
