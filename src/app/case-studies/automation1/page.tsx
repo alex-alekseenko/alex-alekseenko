@@ -89,7 +89,7 @@ export default function AutomationCaseStudy1() {
 
       {/* Animated Hero Section */}
       <section className="pt-24 pb-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-blue-50 to-blue-200"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-emerald-100"></div>
 
         <div className="container-max relative z-10">
           <Link href="/#case-studies" className="inline-flex items-center text-primary-text hover:text-primary-dark mb-8 group">
