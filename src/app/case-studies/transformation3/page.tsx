@@ -300,7 +300,7 @@ export default function TransformationCaseStudy3() {
 
             {/* Result Section */}
             <div className="mb-12">
-              <div className="bg-gradient-to-br from-green-50 to-white rounded-3xl shadow-xl p-10">
+              <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-3xl shadow-xl p-10">
                 <div className="flex items-center gap-4 mb-6">
                   <Trophy className="h-10 w-10 text-primary-dark" />
                   <h2 className="text-3xl font-bold text-primary-dark">The Result</h2>
