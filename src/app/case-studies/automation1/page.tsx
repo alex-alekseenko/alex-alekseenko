@@ -115,7 +115,7 @@ export default function AutomationCaseStudy1() {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-primary-dark to-primary-text bg-clip-text text-transparent mb-8">
-              Enterprise Test Automation<br />Architecture for Smart Devices
+              Enterprise Test Automation<br />Architecture
             </h1>
 
             <p className="text-xl text-primary-dark max-w-3xl leading-relaxed font-semibold italic mb-8">
