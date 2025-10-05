@@ -150,14 +150,11 @@ export default function TransformationCaseStudy3() {
 
             {/* Situation Card */}
             <div className="mb-12">
-              <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
-                <div className="bg-gradient-to-r from-primary-dark to-primary-text p-8">
-                  <div className="flex items-center gap-4">
-                    <Target className="h-10 w-10 text-white" />
-                    <h2 className="text-3xl font-bold text-white">The Situation</h2>
-                  </div>
+              <div className="bg-white rounded-3xl shadow-xl p-10">
+                <div className="flex items-center gap-4 mb-6">
+                  <Target className="h-10 w-10 text-primary-dark" />
+                  <h2 className="text-3xl font-bold text-primary-dark">The Situation</h2>
                 </div>
-                <div className="p-10">
                   <p className="text-lg text-primary-text leading-relaxed mb-6">
                     As Head of QA, I led our 14-person quality assurance team through a comprehensive transformation when our company <mark className="marker-highlight">unexpectedly relocated operations to the European Union</mark>. Having joined the company just <mark className="marker-highlight">two months prior in January 2022</mark>, I needed to rapidly adapt my leadership approach when the relocation was announced in March 2022.
                   </p>
@@ -183,19 +180,15 @@ export default function TransformationCaseStudy3() {
                     </div>
                   </div>
                 </div>
-              </div>
             </div>
 
             {/* Obstacle Card */}
             <div className="mb-12">
-              <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
-                <div className="bg-gradient-to-r from-accent-error to-red-600 p-8">
-                  <div className="flex items-center gap-4">
-                    <AlertTriangle className="h-10 w-10 text-white" />
-                    <h2 className="text-3xl font-bold text-white">The Obstacle</h2>
-                  </div>
+              <div className="bg-white rounded-3xl shadow-xl p-10">
+                <div className="flex items-center gap-4 mb-6">
+                  <AlertTriangle className="h-10 w-10 text-accent-error" />
+                  <h2 className="text-3xl font-bold text-primary-dark">The Obstacle</h2>
                 </div>
-                <div className="p-10">
                   <p className="text-lg text-primary-text leading-relaxed mb-6">
                     Beyond the personal shock of this significant change to my own role expectations, we faced an <mark className="marker-highlight">existential business crisis</mark> that demanded immediate action while managing <mark className="marker-highlight">near-complete team dissolution</mark>. The transition triggered <mark className="marker-highlight">unprecedented attrition</mark>, with only one original team member remaining after a year.
                   </p>
@@ -225,7 +218,6 @@ export default function TransformationCaseStudy3() {
                   <p className="text-lg text-primary-text leading-relaxed">
                     I needed to simultaneously maintain service continuity, recruit across multiple regions, establish new communication frameworks across time zones, and integrate diverse cultural backgrounds—all while the company was <mark className="marker-highlight">"fighting for its life"</mark> in emergency mode. The <mark className="marker-highlight">compressed timeline eliminated options</mark> for formal cultural integration programs, creating a pressure-cooker environment demanding pragmatic crisis management.
                   </p>
-                </div>
               </div>
             </div>
 
