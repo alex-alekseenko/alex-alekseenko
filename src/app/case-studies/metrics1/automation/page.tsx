@@ -2,84 +2,84 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, ChevronRight, Users, Target, Shield, Zap, Trophy, Calendar, Building, BarChart3, Globe, AlertTriangle, CheckCircle2, Database, Activity, Award, Sparkles, TrendingUp } from "lucide-react";
+import { ArrowLeft, ChevronRight, Users, Target, Shield, Zap, Trophy, Calendar, MapPin, Building, BarChart3, Globe, Clock, AlertTriangle, CheckCircle2, Layers, Brain, Heart, Sparkles, Code, Server, Smartphone, Rocket } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-export default function MetricsCaseStudy1() {
+export default function AutomationCaseStudy1() {
   const [expandedCard, setExpandedCard] = useState<string | null>(null);
   const [hoveredMetric, setHoveredMetric] = useState<string | null>(null);
 
   const metrics = [
-    { id: "framework", value: "End-to-End", label: "Metrics Framework", icon: TrendingUp, detail: "Complete data-driven system" },
-    { id: "team", value: "14", label: "Team Members", icon: Users, detail: "Distributed remote team" },
-    { id: "projects", value: "5", label: "Product Lines", icon: BarChart3, detail: "Comprehensive coverage" }
+    { id: "zero-to-one", value: "0 to 1", label: "Automation Department", icon: Rocket, detail: "Created automation department from scratch" },
+    { id: "team", value: "14", label: "Team Hired", icon: Users, detail: "Built automation team from ground up" },
+    { id: "solution", value: "Unified", label: "Scalable Solution", icon: Layers, detail: "Multi-framework architecture" }
   ];
 
   const strategies = [
     {
-      id: "quicksight",
-      title: "AWS QuickSight",
-      icon: Database,
+      id: "web",
+      title: "Web UI Framework",
+      icon: Globe,
       color: "from-blue-500 to-blue-600",
-      description: "Visualization Platform",
-      fullContent: "Selected AWS QuickSight as visualization platform to avoid lengthy corporate procurement while leveraging existing AWS infrastructure for rapid deployment"
+      description: "Java-based Selenium",
+      fullContent: "Developed Java-based framework with optimized Selenium implementation for comprehensive web application testing across multiple product lines"
     },
     {
-      id: "pipeline",
-      title: "Custom Data Pipeline",
-      icon: Activity,
+      id: "api",
+      title: "API Integration",
+      icon: Server,
       color: "from-green-500 to-green-600",
-      description: "Python ETL Scripts",
-      fullContent: "Developed custom Python scripts to extract and transform data from Jira and TestRail sources, implementing ETL architecture for clean, reliable reporting data"
+      description: "Configurable Mocks",
+      fullContent: "Created dedicated API/integration framework with configurable mock server using JSON schema for flexible backend testing"
     },
     {
-      id: "alignment",
-      title: "Business Alignment",
-      icon: Target,
+      id: "android",
+      title: "Android Framework",
+      icon: Smartphone,
       color: "from-purple-500 to-purple-600",
-      description: "Stakeholder Goals",
-      fullContent: "Collaborated directly with business stakeholders to identify key expectations and success indicators, ensuring metrics aligned with business priorities rather than just measuring QA activities"
+      description: "Kotlin E2E Testing",
+      fullContent: "Built Kotlin-based Android UI E2E testing framework aligned with native app development practices and tools"
     },
     {
-      id: "accountability",
-      title: "Individual Accountability",
-      icon: Award,
+      id: "execution",
+      title: "Parallel Execution",
+      icon: Zap,
       color: "from-orange-500 to-orange-600",
-      description: "Action Mapping",
-      fullContent: "Established clear connections between individual responsibilities and team outcomes by decomposing high-level quality metrics into specific actions each QA engineer could directly influence"
+      description: "40 Concurrent Threads",
+      fullContent: "Implemented scalable execution architectures supporting 40 concurrent test threads for maximum throughput and efficiency"
     },
     {
-      id: "transparency",
-      title: "Transparent Visibility",
-      icon: Shield,
-      color: "from-indigo-500 to-indigo-600",
-      description: "Open Dashboards",
-      fullContent: "Created transparent visibility by making the dashboard accessible to all stakeholders, managers, and team members, eliminating information asymmetry"
-    },
-    {
-      id: "development",
-      title: "Career Integration",
-      icon: Sparkles,
-      color: "from-pink-500 to-pink-600",
-      description: "Growth Connection",
-      fullContent: "Tied measurement to personal development by connecting metrics directly to growth opportunities and recognition systems, making career advancement objective and predictable"
-    },
-    {
-      id: "databricks",
-      title: "Enterprise Migration",
-      icon: Database,
+      id: "team",
+      title: "Team Structure",
+      icon: Users,
       color: "from-teal-500 to-teal-600",
-      description: "DataBricks Platform",
-      fullContent: "Obtained DataBricks certification to migrate the solution to an enterprise platform, implementing modern multi-hop architecture and ELT approach for enhanced scalability"
+      description: "Balanced Specialization",
+      fullContent: "Built 14-person automation team with balanced specialization and cross-training—each engineer owned a specific domain while contributing to core framework"
     },
     {
-      id: "dashboards",
-      title: "Multi-dimensional Views",
-      icon: BarChart3,
+      id: "rollout",
+      title: "Phased Rollout",
+      icon: Rocket,
+      color: "from-pink-500 to-pink-600",
+      description: "Strategic Adoption",
+      fullContent: "Implemented strategic rollout working with one development team at a time, starting with web applications to build trust and demonstrate value"
+    },
+    {
+      id: "positioning",
+      title: "Support-First",
+      icon: Target,
+      color: "from-indigo-500 to-indigo-600",
+      description: "Partnership Approach",
+      fullContent: "Positioned automation as support function rather than oversight, emphasizing role in 'taking headaches away' from development teams"
+    },
+    {
+      id: "prioritization",
+      title: "Risk-Based Priority",
+      icon: AlertTriangle,
       color: "from-red-500 to-red-600",
-      description: "Stakeholder-Specific",
-      fullContent: "Designed dashboards with different visualization types tailored to specific stakeholder needs, from executive summaries to detailed engineer performance views"
+      description: "Business Focus",
+      fullContent: "Prioritized automation based on business risk and release schedules, focusing on high-value regression scenarios first"
     }
   ];
 
@@ -89,7 +89,7 @@ export default function MetricsCaseStudy1() {
 
       {/* Animated Hero Section */}
       <section className="pt-24 pb-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-indigo-100"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-emerald-100"></div>
 
         <div className="container-max relative z-10">
           <Link href="/#case-studies" className="inline-flex items-center text-primary-text hover:text-primary-dark mb-8 group">
@@ -101,24 +101,24 @@ export default function MetricsCaseStudy1() {
             <div className="flex flex-wrap gap-3 mb-8">
               <span className="px-4 py-2 bg-primary-dark text-white rounded-lg flex items-center gap-2">
                 <Building className="h-4 w-4" />
-                CloudGeometry
+                SberDevices
               </span>
               <span className="px-4 py-2 bg-white border border-background-light-gray rounded-lg flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                2023-2024
+                2020-2022
               </span>
               <span className="px-4 py-2 bg-white border border-background-light-gray rounded-lg flex items-center gap-2">
-                <Globe className="h-4 w-4" />
-                Remote-First Team
+                <Rocket className="h-4 w-4" />
+                Go-to-Market Startup
               </span>
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-primary-dark to-primary-text bg-clip-text text-transparent mb-8">
-              Strategic<br />Metrics Implementation
+              Enterprise<br />Test Automation Architecture
             </h1>
 
             <p className="text-xl text-primary-dark max-w-3xl leading-relaxed font-semibold italic mb-8">
-              "Transforming remote team performance through comprehensive data-driven metrics, connecting KPIs to personal development"
+              "Building automation excellence in a regulated banking environment while racing against market pressures"
             </p>
 
             {/* Compact Metrics Cards */}
@@ -157,13 +157,13 @@ export default function MetricsCaseStudy1() {
 
                 <div className="space-y-6 text-lg text-primary-text leading-relaxed">
                   <p>
-                    As Head of QA, I led a <mark className="marker-highlight">remote-based team of 14 engineers</mark> working across multiple time zones and continents, supporting five distinct projects with varying roadmaps and requirements. The team existed in a management "gray zone"—with only rudimentary metrics like total test case counts available, stakeholders had limited visibility into actual workload, performance, or value delivery.
+                    I joined a major Russian bank's new innovation department focused on developing smart devices and voice assistants, essentially a <mark className="marker-highlight">900-person startup operating within a regulated banking environment</mark>. The department was tasked with creating a competitive product to rival Amazon Alexa, targeting both consumer markets and specialized hotel solutions.
                   </p>
                   <p>
-                    As an outsourcing company, we faced increasing pressure from clients questioning whether our QA resources were optimally allocated and utilized. Without meaningful performance indicators, it was <mark className="marker-highlight">increasingly difficult to differentiate</mark> between engineers delivering substantive contributions versus those creating surface-level artifacts like empty test cases or claiming to validate features they hadn't thoroughly tested.
+                    When I arrived, testing was <mark className="marker-highlight">entirely fragmented</mark>—developers performed ad-hoc testing based on individual preferences, with no standardized approach or reusable assets. Manual QA teams were overwhelmed by growing regression needs, with each incremental change requiring significant validation effort.
                   </p>
                   <p>
-                    This lack of visibility contributed to inconsistent quality, missed defects reaching production, and growing customer dissatisfaction.
+                    The initiative was barely a year old with <mark className="marker-highlight">no production release yet</mark>, but faced aggressive go-to-market timelines and high executive visibility as a flagship innovation project for the bank.
                   </p>
                 </div>
 
@@ -171,18 +171,18 @@ export default function MetricsCaseStudy1() {
                 <div className="grid md:grid-cols-3 gap-4 mt-8">
                   <div className="bg-background-subtle-gray rounded-xl p-4">
                     <Globe className="h-6 w-6 text-primary-dark mb-2" />
-                    <div className="font-semibold text-primary-dark">Visibility Gap</div>
-                    <div className="text-sm text-primary-text/60">Rudimentary metrics only</div>
+                    <div className="font-semibold text-primary-dark">Ad-hoc Testing</div>
+                    <div className="text-sm text-primary-text/60">No standardized approach</div>
                   </div>
                   <div className="bg-background-subtle-gray rounded-xl p-4">
-                    <Users className="h-6 w-6 text-primary-dark mb-2" />
-                    <div className="font-semibold text-primary-dark">Remote Team</div>
-                    <div className="text-sm text-primary-text/60">Multiple time zones</div>
+                    <Rocket className="h-6 w-6 text-primary-dark mb-2" />
+                    <div className="font-semibold text-primary-dark">Aggressive R&D Process</div>
+                    <div className="text-sm text-primary-text/60">Go-to-market timeline pressure</div>
                   </div>
                   <div className="bg-background-subtle-gray rounded-xl p-4">
-                    <BarChart3 className="h-6 w-6 text-primary-dark mb-2" />
-                    <div className="font-semibold text-primary-dark">Client Pressure</div>
-                    <div className="text-sm text-primary-text/60">Resource allocation questions</div>
+                    <Target className="h-6 w-6 text-primary-dark mb-2" />
+                    <div className="font-semibold text-primary-dark">High Visibility</div>
+                    <div className="text-sm text-primary-text/60">Flagship innovation project</div>
                   </div>
                 </div>
               </div>
@@ -198,13 +198,13 @@ export default function MetricsCaseStudy1() {
 
                 <div className="space-y-6 text-lg text-primary-text leading-relaxed mb-8">
                   <p>
-                    Implementing a comprehensive metrics framework faced multiple, interconnected challenges that required both <mark className="marker-highlight">technical and cultural transformation</mark>.
+                    I faced multilayered challenges requiring both technical and organizational solutions. The environment combined <mark className="marker-highlight">startup-level urgency with enterprise banking constraints</mark>—every access request between services or environments required weeks of compliance reviews and approvals.
                   </p>
                   <p>
-                    The organization had <mark className="marker-highlight">no existing analytics infrastructure</mark>—only manual Excel reporting that was time-consuming and error-prone. Additionally, introducing measurement systems often triggers resistance, as team members fear being unfairly judged or micromanaged based on incomplete data.
+                    There was <mark className="marker-highlight">no existing test automation team or infrastructure</mark>, requiring me to define, hire, and build this function from scratch while simultaneously defining the architecture. The solution needed to cover disparate technologies including web applications, Android devices, voice assistants with NLP capabilities, and complex backend integrations.
                   </p>
                   <p>
-                    Most critically, I needed to ensure the metrics framework would actually <mark className="marker-highlight">drive positive behavior</mark> rather than creating perverse incentives where engineers gamed the system or focused on vanity metrics disconnected from real quality outcomes.
+                    Additionally, I needed to build trust with development teams who were accustomed to their own testing approaches but weren't yet familiar with centralized automation strategies. All of this occurred under <mark className="marker-highlight">relentless deadline pressure</mark> as the business pushed to capture market share before competitors.
                   </p>
                 </div>
 
@@ -212,28 +212,28 @@ export default function MetricsCaseStudy1() {
                 <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
                   <div className="bg-background-subtle-gray rounded-xl p-4">
                     <AlertTriangle className="h-6 w-6 text-accent-error mb-2" />
-                    <div className="font-semibold text-primary-dark">Cultural Resistance</div>
-                    <div className="text-sm text-primary-text/60">Fear of measurement</div>
+                    <div className="font-semibold text-primary-dark">Regulatory Constraints</div>
+                    <div className="text-sm text-primary-text/60">Weeks for access approvals</div>
                   </div>
                   <div className="bg-background-subtle-gray rounded-xl p-4">
-                    <Globe className="h-6 w-6 text-accent-error mb-2" />
-                    <div className="font-semibold text-primary-dark">Remote Management</div>
-                    <div className="text-sm text-primary-text/60">Distributed team tracking</div>
+                    <Code className="h-6 w-6 text-accent-error mb-2" />
+                    <div className="font-semibold text-primary-dark">Greenfield Build</div>
+                    <div className="text-sm text-primary-text/60">No existing infrastructure</div>
                   </div>
                   <div className="bg-background-subtle-gray rounded-xl p-4">
-                    <Database className="h-6 w-6 text-accent-error mb-2" />
-                    <div className="font-semibold text-primary-dark">Infrastructure Gap</div>
-                    <div className="text-sm text-primary-text/60">Manual Excel only</div>
-                  </div>
-                  <div className="bg-background-subtle-gray rounded-xl p-4">
-                    <Target className="h-6 w-6 text-accent-error mb-2" />
-                    <div className="font-semibold text-primary-dark">Right Metrics</div>
-                    <div className="text-sm text-primary-text/60">Avoid perverse incentives</div>
+                    <Layers className="h-6 w-6 text-accent-error mb-2" />
+                    <div className="font-semibold text-primary-dark">Tech Diversity</div>
+                    <div className="text-sm text-primary-text/60">Web, Android, NLP, APIs</div>
                   </div>
                   <div className="bg-background-subtle-gray rounded-xl p-4">
                     <Users className="h-6 w-6 text-accent-error mb-2" />
-                    <div className="font-semibold text-primary-dark">Stakeholder Alignment</div>
-                    <div className="text-sm text-primary-text/60">Business priorities</div>
+                    <div className="font-semibold text-primary-dark">Cultural Resistance</div>
+                    <div className="text-sm text-primary-text/60">Dev teams' own practices</div>
+                  </div>
+                  <div className="bg-background-subtle-gray rounded-xl p-4">
+                    <Zap className="h-6 w-6 text-accent-error mb-2" />
+                    <div className="font-semibold text-primary-dark">Aggressive Timelines</div>
+                    <div className="text-sm text-primary-text/60">Market share pressure</div>
                   </div>
                 </div>
               </div>
@@ -244,14 +244,14 @@ export default function MetricsCaseStudy1() {
               <div className="bg-white rounded-3xl shadow-xl p-10">
                 <div className="mb-8">
                   <div className="flex items-center gap-4 mb-4">
-                    <TrendingUp className="h-10 w-10 text-primary-dark" />
+                    <Rocket className="h-10 w-10 text-primary-dark" />
                     <h2 className="text-3xl font-bold text-primary-dark">Strategic Action Plan</h2>
                   </div>
                   <p className="text-primary-text/60">Click each strategy to explore the implementation details</p>
                 </div>
 
                 <p className="text-lg text-primary-text leading-relaxed mb-8">
-                  I implemented a comprehensive technical and strategic approach, taking full end-to-end ownership from conception to implementation:
+                  I developed a comprehensive multi-framework architecture with purpose-built solutions and strategic implementation approach:
                 </p>
 
                 {/* Strategic Action Plan - Expandable Cards */}
@@ -285,8 +285,8 @@ export default function MetricsCaseStudy1() {
                           <div className={`h-12 w-12 bg-gradient-to-br ${strategy.color} rounded-lg flex items-center justify-center mb-4`}>
                             <Icon className="h-6 w-6 text-white" />
                           </div>
-                          <h3 className="text-lg font-bold text-primary-dark mb-2 whitespace-nowrap">{strategy.title}</h3>
-                          <p className="text-sm text-primary-text/60 mb-4 whitespace-nowrap">{strategy.description}</p>
+                          <h3 className="text-lg font-bold text-primary-dark mb-2">{strategy.title}</h3>
+                          <p className="text-sm text-primary-text/60 mb-4">{strategy.description}</p>
                           {isExpanded && (
                             <div className="mt-4 pt-4 border-t border-background-light-gray">
                               <p className="text-base text-primary-text leading-relaxed">{strategy.fullContent}</p>
@@ -315,10 +315,13 @@ export default function MetricsCaseStudy1() {
                 <div className="bg-white rounded-2xl p-8 shadow-md mb-8">
                   <div className="space-y-6 text-lg text-primary-text leading-relaxed">
                     <p>
-                      The metrics transformation delivered remarkable business impact across multiple dimensions. Beyond the numbers, the initiative fundamentally changed stakeholder dynamics. <mark className="marker-highlight">Client conversations shifted from subjective debates</mark> about resource utilization to data-driven discussions about quality outcomes and strategic investments.
+                      The framework we built transformed testing capabilities across the entire smart devices division, delivering measurable business impact. We achieved <mark className="marker-highlight">100% automation of voice assistant testing (1,670+ scenarios)</mark>, complete web-based testing automation (1,200+ scenarios), 56% API/integration testing coverage, and 80% Android UI testing automation (190 scenarios).
                     </p>
                     <p>
-                      Within the team, performance visibility created a culture where actual contributions determined recognition and rewards, allowing <mark className="marker-highlight">high performers to finally shine based on real results</mark> rather than perception, while underperformers could no longer hide.
+                      The automation framework became fundamental to maintaining release cadence and enabling monthly stakeholder demonstrations. <mark className="marker-highlight">Executives were amazed</mark> by areas where automation was complete while pushing for acceleration in areas still in progress.
+                    </p>
+                    <p>
+                      Most importantly, the framework consistently caught critical issues before release—from broken voice assistant skills to mid-flow Android UI failures and backward compatibility breaks—proving its value in a startup environment where rapid changes often introduced unexpected defects across the technology stack.
                     </p>
                   </div>
 
@@ -328,7 +331,7 @@ export default function MetricsCaseStudy1() {
                       <h3 className="text-xl font-semibold text-primary-dark">Key Insight</h3>
                     </div>
                     <p className="text-lg text-primary-text leading-relaxed">
-                      Most critically, the framework proved invaluable in managing our remote, multinational team, providing objective insight into engagement and results regardless of physical location or time zone.
+                      Building enterprise test automation in a regulated environment requires balancing technical excellence with organizational change management—securing stakeholder buy-in through demonstrable value delivery.
                     </p>
                   </div>
                 </div>
@@ -337,28 +340,28 @@ export default function MetricsCaseStudy1() {
                 <div className="grid md:grid-cols-5 gap-4">
                   <div className="bg-white rounded-xl p-4 border border-gray-200">
                     <CheckCircle2 className="h-6 w-6 text-primary-dark mb-2" />
-                    <div className="font-semibold text-primary-dark">3x</div>
-                    <div className="text-sm text-primary-text/60">Defect Reduction</div>
+                    <div className="font-semibold text-primary-dark">95%</div>
+                    <div className="text-sm text-primary-text/60">Time Reduction</div>
                   </div>
                   <div className="bg-white rounded-xl p-4 border border-gray-200">
                     <CheckCircle2 className="h-6 w-6 text-primary-dark mb-2" />
-                    <div className="font-semibold text-primary-dark">73%</div>
-                    <div className="text-sm text-primary-text/60">Velocity Increase</div>
+                    <div className="font-semibold text-primary-dark">1,670+</div>
+                    <div className="text-sm text-primary-text/60">Scenarios Automated</div>
                   </div>
                   <div className="bg-white rounded-xl p-4 border border-gray-200">
                     <CheckCircle2 className="h-6 w-6 text-primary-dark mb-2" />
-                    <div className="font-semibold text-primary-dark">0%</div>
-                    <div className="text-sm text-primary-text/60">Headcount Growth</div>
+                    <div className="font-semibold text-primary-dark">90 min</div>
+                    <div className="text-sm text-primary-text/60">Regression Cycle</div>
                   </div>
                   <div className="bg-white rounded-xl p-4 border border-gray-200">
                     <CheckCircle2 className="h-6 w-6 text-primary-dark mb-2" />
-                    <div className="font-semibold text-primary-dark">7%</div>
-                    <div className="text-sm text-primary-text/60">Release Delays</div>
+                    <div className="font-semibold text-primary-dark">40</div>
+                    <div className="text-sm text-primary-text/60">Concurrent Threads</div>
                   </div>
                   <div className="bg-white rounded-xl p-4 border border-gray-200">
                     <CheckCircle2 className="h-6 w-6 text-primary-dark mb-2" />
-                    <div className="font-semibold text-primary-dark">33%</div>
-                    <div className="text-sm text-primary-text/60">Dev Team Growth</div>
+                    <div className="font-semibold text-primary-dark">14</div>
+                    <div className="text-sm text-primary-text/60">Team Members</div>
                   </div>
                 </div>
               </div>
@@ -373,10 +376,10 @@ export default function MetricsCaseStudy1() {
         <div className="container-max">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Ready to Transform Your QA Metrics?
+              Ready to Transform Your Test Automation?
             </h2>
             <p className="text-xl text-white/80 mb-10 leading-relaxed">
-              Let's discuss how strategic metrics implementation can elevate your quality engineering
+              Let's discuss how strategic automation architecture can accelerate your quality engineering
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link href="/#contact" className="group inline-flex items-center gap-3 px-8 py-4 bg-white text-primary-dark font-semibold rounded-full hover:bg-white/90 transition-all hover:gap-4">
