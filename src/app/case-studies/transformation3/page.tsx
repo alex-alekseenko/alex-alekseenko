@@ -188,41 +188,44 @@ export default function TransformationCaseStudy3() {
 
             {/* Obstacle Card */}
             <div className="mb-12">
-              <div className="bg-gradient-to-r from-accent-error/10 to-accent-error/5 rounded-3xl p-10 border-2 border-accent-error/20">
-                <div className="flex items-center gap-4 mb-6">
-                  <AlertTriangle className="h-10 w-10 text-accent-error" />
-                  <h2 className="text-3xl font-bold text-primary-dark">The Obstacle</h2>
-                </div>
-
-                <p className="text-lg text-primary-text leading-relaxed mb-6">
-                  Beyond the personal shock of this significant change to my own role expectations, we faced an <mark className="marker-highlight">existential business crisis</mark> that demanded immediate action while managing <mark className="marker-highlight">near-complete team dissolution</mark>. The transition triggered <mark className="marker-highlight">unprecedented attrition</mark>, with only one original team member remaining after a year.
-                </p>
-
-                <div className="bg-white rounded-2xl p-6 mb-6">
-                  <h3 className="text-lg font-semibold text-primary-dark mb-4">Critical Challenges:</h3>
-                  <div className="space-y-3">
-                    <div className="flex items-start gap-3">
-                      <ChevronRight className="h-5 w-5 text-accent-error mt-0.5 flex-shrink-0" />
-                      <span className="text-base text-primary-text">Maintain service continuity across all product lines</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <ChevronRight className="h-5 w-5 text-accent-error mt-0.5 flex-shrink-0" />
-                      <span className="text-base text-primary-text">Recruit across multiple regions (CIS, EU, LATAM)</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <ChevronRight className="h-5 w-5 text-accent-error mt-0.5 flex-shrink-0" />
-                      <span className="text-base text-primary-text">Establish new communication frameworks</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <ChevronRight className="h-5 w-5 text-accent-error mt-0.5 flex-shrink-0" />
-                      <span className="text-base text-primary-text">Integrate diverse cultural backgrounds</span>
-                    </div>
+              <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
+                <div className="bg-gradient-to-r from-accent-error to-red-600 p-8">
+                  <div className="flex items-center gap-4">
+                    <AlertTriangle className="h-10 w-10 text-white" />
+                    <h2 className="text-3xl font-bold text-white">The Obstacle</h2>
                   </div>
                 </div>
+                <div className="p-10">
+                  <p className="text-lg text-primary-text leading-relaxed mb-6">
+                    Beyond the personal shock of this significant change to my own role expectations, we faced an <mark className="marker-highlight">existential business crisis</mark> that demanded immediate action while managing <mark className="marker-highlight">near-complete team dissolution</mark>. The transition triggered <mark className="marker-highlight">unprecedented attrition</mark>, with only one original team member remaining after a year.
+                  </p>
 
-                <p className="text-lg text-primary-text leading-relaxed">
-                  I needed to simultaneously maintain service continuity, recruit across multiple regions, establish new communication frameworks across time zones, and integrate diverse cultural backgrounds—all while the company was <mark className="marker-highlight">"fighting for its life"</mark> in emergency mode. The <mark className="marker-highlight">compressed timeline eliminated options</mark> for formal cultural integration programs, creating a pressure-cooker environment demanding pragmatic crisis management.
-                </p>
+                  <div className="bg-accent-error/10 rounded-2xl p-6 mb-6">
+                    <h3 className="text-lg font-semibold text-primary-dark mb-4">Critical Challenges:</h3>
+                    <div className="space-y-3">
+                      <div className="flex items-start gap-3">
+                        <ChevronRight className="h-5 w-5 text-accent-error mt-0.5 flex-shrink-0" />
+                        <span className="text-base text-primary-text">Maintain service continuity across all product lines</span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <ChevronRight className="h-5 w-5 text-accent-error mt-0.5 flex-shrink-0" />
+                        <span className="text-base text-primary-text">Recruit across multiple regions (CIS, EU, LATAM)</span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <ChevronRight className="h-5 w-5 text-accent-error mt-0.5 flex-shrink-0" />
+                        <span className="text-base text-primary-text">Establish new communication frameworks</span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <ChevronRight className="h-5 w-5 text-accent-error mt-0.5 flex-shrink-0" />
+                        <span className="text-base text-primary-text">Integrate diverse cultural backgrounds</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p className="text-lg text-primary-text leading-relaxed">
+                    I needed to simultaneously maintain service continuity, recruit across multiple regions, establish new communication frameworks across time zones, and integrate diverse cultural backgrounds—all while the company was <mark className="marker-highlight">"fighting for its life"</mark> in emergency mode. The <mark className="marker-highlight">compressed timeline eliminated options</mark> for formal cultural integration programs, creating a pressure-cooker environment demanding pragmatic crisis management.
+                  </p>
+                </div>
               </div>
             </div>
 
