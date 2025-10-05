@@ -193,31 +193,32 @@ export default function TransformationCaseStudy3() {
                     Beyond the personal shock of this significant change to my own role expectations, we faced an <mark className="marker-highlight">existential business crisis</mark> that demanded immediate action while managing <mark className="marker-highlight">near-complete team dissolution</mark>. The transition triggered <mark className="marker-highlight">unprecedented attrition</mark>, with only one original team member remaining after a year.
                   </p>
 
-                  <div className="bg-accent-error/10 rounded-2xl p-6 mb-6">
-                    <h3 className="text-lg font-semibold text-primary-dark mb-4">Critical Challenges:</h3>
-                    <div className="space-y-3">
-                      <div className="flex items-start gap-3">
-                        <ChevronRight className="h-5 w-5 text-accent-error mt-0.5 flex-shrink-0" />
-                        <span className="text-base text-primary-text">Maintain service continuity across all product lines</span>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <ChevronRight className="h-5 w-5 text-accent-error mt-0.5 flex-shrink-0" />
-                        <span className="text-base text-primary-text">Recruit across multiple regions (CIS, EU, LATAM)</span>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <ChevronRight className="h-5 w-5 text-accent-error mt-0.5 flex-shrink-0" />
-                        <span className="text-base text-primary-text">Establish new communication frameworks</span>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <ChevronRight className="h-5 w-5 text-accent-error mt-0.5 flex-shrink-0" />
-                        <span className="text-base text-primary-text">Integrate diverse cultural backgrounds</span>
-                      </div>
-                    </div>
-                  </div>
-
                   <p className="text-lg text-primary-text leading-relaxed">
                     I needed to simultaneously maintain service continuity, recruit across multiple regions, establish new communication frameworks across time zones, and integrate diverse cultural backgrounds—all while the company was <mark className="marker-highlight">"fighting for its life"</mark> in emergency mode. The <mark className="marker-highlight">compressed timeline eliminated options</mark> for formal cultural integration programs, creating a pressure-cooker environment demanding pragmatic crisis management.
                   </p>
+
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+                    <div className="bg-background-subtle-gray rounded-xl p-4">
+                      <Shield className="h-6 w-6 text-accent-error mb-2" />
+                      <div className="font-semibold text-primary-dark">Service Continuity</div>
+                      <div className="text-sm text-primary-text/60">Across all product lines</div>
+                    </div>
+                    <div className="bg-background-subtle-gray rounded-xl p-4">
+                      <Globe className="h-6 w-6 text-accent-error mb-2" />
+                      <div className="font-semibold text-primary-dark">Global Recruitment</div>
+                      <div className="text-sm text-primary-text/60">CIS, EU, LATAM regions</div>
+                    </div>
+                    <div className="bg-background-subtle-gray rounded-xl p-4">
+                      <Users className="h-6 w-6 text-accent-error mb-2" />
+                      <div className="font-semibold text-primary-dark">New Frameworks</div>
+                      <div className="text-sm text-primary-text/60">Communication protocols</div>
+                    </div>
+                    <div className="bg-background-subtle-gray rounded-xl p-4">
+                      <Heart className="h-6 w-6 text-accent-error mb-2" />
+                      <div className="font-semibold text-primary-dark">Cultural Integration</div>
+                      <div className="text-sm text-primary-text/60">Diverse backgrounds</div>
+                    </div>
+                  </div>
               </div>
             </div>
 
