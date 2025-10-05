@@ -273,9 +273,9 @@ export default function TransformationCaseStudy3() {
                           width: '640px'
                         } : {}}
                       >
-                        <div className={`w-full h-2 bg-gradient-to-r ${strategy.color} rounded-full mb-4`}></div>
-
-                        <Icon className="h-8 w-8 text-primary-dark mb-3" />
+                        <div className={`h-14 w-14 bg-gradient-to-br ${strategy.color} rounded-xl flex items-center justify-center mb-4`}>
+                          <Icon className="h-7 w-7 text-white" />
+                        </div>
                         <h3 className="text-lg font-semibold text-primary-dark mb-2">{strategy.title}</h3>
                         <p className="text-sm text-primary-dark/80 font-medium mb-3">{strategy.description}</p>
 
