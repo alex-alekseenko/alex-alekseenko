@@ -197,7 +197,12 @@ export default function TransformationCaseStudy3() {
                     I needed to simultaneously maintain service continuity, recruit across multiple regions, establish new communication frameworks across time zones, and integrate diverse cultural backgrounds—all while the company was <mark className="marker-highlight">"fighting for its life"</mark> in emergency mode. The <mark className="marker-highlight">compressed timeline eliminated options</mark> for formal cultural integration programs, creating a pressure-cooker environment demanding pragmatic crisis management.
                   </p>
 
-                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+                  <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4 mt-8">
+                    <div className="bg-background-subtle-gray rounded-xl p-4">
+                      <AlertTriangle className="h-6 w-6 text-accent-error mb-2" />
+                      <div className="font-semibold text-primary-dark">Team Attrition</div>
+                      <div className="text-sm text-primary-text/60">Members leaving & frustration</div>
+                    </div>
                     <div className="bg-background-subtle-gray rounded-xl p-4">
                       <Shield className="h-6 w-6 text-accent-error mb-2" />
                       <div className="font-semibold text-primary-dark">Service Continuity</div>
