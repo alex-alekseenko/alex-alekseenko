@@ -178,6 +178,9 @@ export default function Home() {
                 <a href="https://www.linkedin.com/in/alex-alekseenko/" target="_blank" rel="noopener noreferrer" className="text-primary-text hover:text-primary-dark transition-colors">
                   <Linkedin className="h-6 w-6" />
                 </a>
+                <a href="https://github.com/alex-alekseenko/alex-alekseenko" target="_blank" rel="noopener noreferrer" className="text-primary-text hover:text-primary-dark transition-colors">
+                  <Github className="h-6 w-6" />
+                </a>
                 <div className="flex items-center text-primary-text">
                   <MapPin className="h-5 w-5 mr-1" />
                   <span className="text-sm">Dubai, UAE</span>
