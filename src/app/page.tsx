@@ -170,8 +170,27 @@ export default function Home() {
                 building world-class distributed teams and implementing scalable QA frameworks.
               </p>
 
-              {/* Social Links */}
-              <div className="flex items-center justify-center md:justify-start gap-4">
+              {/* Location */}
+              <div className="flex items-center justify-center md:justify-start text-primary-text">
+                <MapPin className="h-5 w-5 mr-1" />
+                <span className="text-sm">Dubai, UAE</span>
+              </div>
+            </div>
+
+            {/* Right Photo with Social Icons */}
+            <div className="flex-shrink-0 flex flex-col items-center gap-4">
+              <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden bg-gradient-to-br from-primary-dark/10 to-accent-link/10">
+                <Image
+                  src="/alex-photo.jpg"
+                  alt="Alex Alekseenko"
+                  fill
+                  className="object-cover scale-150"
+                  priority
+                />
+              </div>
+
+              {/* Social Icons */}
+              <div className="flex items-center gap-4">
                 <a href="mailto:a.alekseenko.personal@gmail.com" className="text-primary-text hover:text-primary-dark transition-colors">
                   <Mail className="h-6 w-6" />
                 </a>
@@ -181,23 +200,6 @@ export default function Home() {
                 <a href="https://github.com/alex-alekseenko/alex-alekseenko" target="_blank" rel="noopener noreferrer" className="text-primary-text hover:text-primary-dark transition-colors">
                   <Github className="h-6 w-6" />
                 </a>
-                <div className="flex items-center text-primary-text">
-                  <MapPin className="h-5 w-5 mr-1" />
-                  <span className="text-sm">Dubai, UAE</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Photo */}
-            <div className="flex-shrink-0">
-              <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden bg-gradient-to-br from-primary-dark/10 to-accent-link/10">
-                <Image
-                  src="/alex-photo.jpg"
-                  alt="Alex Alekseenko"
-                  fill
-                  className="object-cover scale-150"
-                  priority
-                />
               </div>
             </div>
           </div>
