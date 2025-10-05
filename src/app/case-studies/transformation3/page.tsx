@@ -300,12 +300,11 @@ export default function TransformationCaseStudy3() {
 
             {/* Result Card */}
             <div className="mb-12">
-              <div className="bg-gradient-to-br from-accent-success/20 via-accent-success/10 to-white rounded-3xl shadow-xl overflow-hidden">
-                <div className="p-10">
-                  <div className="flex items-center gap-4 mb-8">
-                    <Trophy className="h-12 w-12 text-accent-success" />
-                    <h2 className="text-3xl font-bold text-primary-dark">The Result</h2>
-                  </div>
+              <div className="bg-white rounded-3xl shadow-xl p-10">
+                <div className="flex items-center gap-4 mb-6">
+                  <Trophy className="h-10 w-10 text-primary-dark" />
+                  <h2 className="text-3xl font-bold text-primary-dark">The Result</h2>
+                </div>
 
                   <div className="space-y-6 text-lg text-primary-text leading-relaxed">
                     <p>
@@ -331,28 +330,27 @@ export default function TransformationCaseStudy3() {
 
                   {/* Success Metrics */}
                   <div className="grid md:grid-cols-4 gap-4 mt-8">
-                    <div className="bg-white rounded-xl p-4 text-center border-2 border-accent-success">
-                      <CheckCircle2 className="h-8 w-8 text-accent-success mx-auto mb-2" />
-                      <div className="text-2xl font-bold text-primary-dark">100%</div>
+                    <div className="bg-background-subtle-gray rounded-xl p-4">
+                      <CheckCircle2 className="h-6 w-6 text-primary-dark mb-2" />
+                      <div className="font-semibold text-primary-dark">100%</div>
                       <div className="text-sm text-primary-text/60">Quality Maintained</div>
                     </div>
-                    <div className="bg-white rounded-xl p-4 text-center border-2 border-accent-success">
-                      <CheckCircle2 className="h-8 w-8 text-accent-success mx-auto mb-2" />
-                      <div className="text-2xl font-bold text-primary-dark">Zero</div>
+                    <div className="bg-background-subtle-gray rounded-xl p-4">
+                      <CheckCircle2 className="h-6 w-6 text-primary-dark mb-2" />
+                      <div className="font-semibold text-primary-dark">Zero</div>
                       <div className="text-sm text-primary-text/60">Client Incidents</div>
                     </div>
-                    <div className="bg-white rounded-xl p-4 text-center border-2 border-accent-success">
-                      <CheckCircle2 className="h-8 w-8 text-accent-success mx-auto mb-2" />
-                      <div className="text-2xl font-bold text-primary-dark">5</div>
+                    <div className="bg-background-subtle-gray rounded-xl p-4">
+                      <CheckCircle2 className="h-6 w-6 text-primary-dark mb-2" />
+                      <div className="font-semibold text-primary-dark">5</div>
                       <div className="text-sm text-primary-text/60">Products Supported</div>
                     </div>
-                    <div className="bg-white rounded-xl p-4 text-center border-2 border-accent-success">
-                      <CheckCircle2 className="h-8 w-8 text-accent-success mx-auto mb-2" />
-                      <div className="text-2xl font-bold text-primary-dark">Global</div>
+                    <div className="bg-background-subtle-gray rounded-xl p-4">
+                      <CheckCircle2 className="h-6 w-6 text-primary-dark mb-2" />
+                      <div className="font-semibold text-primary-dark">Global</div>
                       <div className="text-sm text-primary-text/60">Team Diversity</div>
                     </div>
                   </div>
-                </div>
               </div>
             </div>
 
