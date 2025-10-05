@@ -110,7 +110,7 @@ export default function AutomationCaseStudy1() {
               </span>
               <span className="px-4 py-2 bg-white border border-background-light-gray rounded-lg flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
-                900-person startup
+                Go-to-Market Startup
               </span>
             </div>
 
