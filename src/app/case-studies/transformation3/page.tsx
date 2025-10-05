@@ -131,10 +131,10 @@ export default function TransformationCaseStudy3() {
                     key={metric.id}
                     className="relative group"
                   >
-                    <div className="bg-white rounded-lg p-3 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
-                      <Icon className="h-5 w-5 text-primary-dark mb-1.5 group-hover:scale-110 transition-transform" />
-                      <div className="text-2xl font-bold text-primary-dark mb-0.5">{metric.value}</div>
-                      <div className="text-[10px] text-primary-text/60 uppercase tracking-wider leading-tight">{metric.label}</div>
+                    <div className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+                      <Icon className="h-6 w-6 text-primary-dark mb-2 group-hover:scale-110 transition-transform" />
+                      <div className="text-3xl font-bold text-primary-dark mb-1">{metric.value}</div>
+                      <div className="text-xs text-primary-text/60 uppercase tracking-wider">{metric.label}</div>
                     </div>
                   </div>
                 );
@@ -200,23 +200,23 @@ export default function TransformationCaseStudy3() {
                 </p>
 
                 <div className="bg-white rounded-2xl p-6 mb-6">
-                  <h3 className="font-semibold text-primary-dark mb-4">Critical Challenges:</h3>
+                  <h3 className="text-lg font-semibold text-primary-dark mb-4">Critical Challenges:</h3>
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
                       <ChevronRight className="h-5 w-5 text-accent-error mt-0.5 flex-shrink-0" />
-                      <span className="text-primary-text">Maintain service continuity across all product lines</span>
+                      <span className="text-base text-primary-text">Maintain service continuity across all product lines</span>
                     </div>
                     <div className="flex items-start gap-3">
                       <ChevronRight className="h-5 w-5 text-accent-error mt-0.5 flex-shrink-0" />
-                      <span className="text-primary-text">Recruit across multiple regions (CIS, EU, LATAM)</span>
+                      <span className="text-base text-primary-text">Recruit across multiple regions (CIS, EU, LATAM)</span>
                     </div>
                     <div className="flex items-start gap-3">
                       <ChevronRight className="h-5 w-5 text-accent-error mt-0.5 flex-shrink-0" />
-                      <span className="text-primary-text">Establish new communication frameworks</span>
+                      <span className="text-base text-primary-text">Establish new communication frameworks</span>
                     </div>
                     <div className="flex items-start gap-3">
                       <ChevronRight className="h-5 w-5 text-accent-error mt-0.5 flex-shrink-0" />
-                      <span className="text-primary-text">Integrate diverse cultural backgrounds</span>
+                      <span className="text-base text-primary-text">Integrate diverse cultural backgrounds</span>
                     </div>
                   </div>
                 </div>
@@ -256,21 +256,21 @@ export default function TransformationCaseStudy3() {
                       <div
                         onClick={() => setExpandedCard(isExpanded ? null : strategy.id)}
                         className={`
-                          bg-white rounded-xl p-5 shadow-lg hover:shadow-2xl
+                          bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl
                           transition-all duration-500 cursor-pointer
                           ${isExpanded ? 'scale-105' : 'hover:scale-105'}
                         `}
                       >
-                        <div className={`w-full h-1.5 bg-gradient-to-r ${strategy.color} rounded-full mb-4`}></div>
+                        <div className={`w-full h-2 bg-gradient-to-r ${strategy.color} rounded-full mb-4`}></div>
 
-                        <Icon className="h-7 w-7 text-primary-dark mb-3" />
-                        <h3 className="text-base font-semibold text-primary-dark mb-2 line-clamp-1">{strategy.title}</h3>
-                        <p className="text-xs text-primary-dark/80 font-medium mb-3 line-clamp-1">{strategy.description}</p>
+                        <Icon className="h-8 w-8 text-primary-dark mb-3" />
+                        <h3 className="text-lg font-semibold text-primary-dark mb-2 line-clamp-1">{strategy.title}</h3>
+                        <p className="text-sm text-primary-dark/80 font-medium mb-3 line-clamp-1">{strategy.description}</p>
 
                         {isExpanded && (
                           <div className="animate-fade-in">
                             <div className="h-px bg-background-light-gray my-4"></div>
-                            <p className="text-primary-text leading-relaxed">
+                            <p className="text-base text-primary-text leading-relaxed">
                               {strategy.fullContent}
                             </p>
                           </div>
