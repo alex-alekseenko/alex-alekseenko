@@ -176,8 +176,8 @@ export default function AutomationCaseStudy1() {
                   </div>
                   <div className="bg-background-subtle-gray rounded-xl p-4">
                     <Rocket className="h-6 w-6 text-primary-dark mb-2" />
-                    <div className="font-semibold text-primary-dark">No Production Release</div>
-                    <div className="text-sm text-primary-text/60">Aggressive timeline pressure</div>
+                    <div className="font-semibold text-primary-dark">Aggressive R&D Process</div>
+                    <div className="text-sm text-primary-text/60">Go-to-market timeline pressure</div>
                   </div>
                   <div className="bg-background-subtle-gray rounded-xl p-4">
                     <Target className="h-6 w-6 text-primary-dark mb-2" />
