@@ -55,7 +55,7 @@ export default function TransformationCaseStudy3() {
       title: "Predictable Communication",
       icon: Calendar,
       color: "from-indigo-500 to-indigo-600",
-      description: "Structured Schedules",
+      description: "Consistent Rhythms",
       fullContent: "Maintained predictable communication schedules and decision points to reduce anxiety despite the high-uncertainty environment"
     },
     {
@@ -118,7 +118,7 @@ export default function TransformationCaseStudy3() {
               Crisis-Driven<br />QA Team Transformation
             </h1>
 
-            <p className="text-xl text-primary-text/80 max-w-3xl leading-relaxed font-light italic">
+            <p className="text-xl text-primary-dark max-w-3xl leading-relaxed font-semibold italic">
               "What once seemed like an impossible challenge transformed into one of our greatest achievements"
             </p>
           </div>
@@ -134,20 +134,12 @@ export default function TransformationCaseStudy3() {
               return (
                 <div
                   key={metric.id}
-                  onMouseEnter={() => setHoveredMetric(metric.id)}
-                  onMouseLeave={() => setHoveredMetric(null)}
-                  className="relative group cursor-pointer"
+                  className="relative group"
                 >
                   <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                     <Icon className="h-8 w-8 text-primary-dark mb-4 group-hover:scale-110 transition-transform" />
                     <div className="text-4xl font-bold text-primary-dark mb-2">{metric.value}</div>
                     <div className="text-sm text-primary-text/60 uppercase tracking-wider">{metric.label}</div>
-
-                    {hoveredMetric === metric.id && (
-                      <div className="absolute top-full left-0 right-0 mt-2 p-4 bg-primary-dark text-white rounded-lg text-sm z-20 animate-fade-in">
-                        {metric.detail}
-                      </div>
-                    )}
                   </div>
                 </div>
               );
@@ -172,10 +164,10 @@ export default function TransformationCaseStudy3() {
                 </div>
                 <div className="p-10">
                   <p className="text-lg text-primary-text leading-relaxed mb-6">
-                    As Head of QA, I led our 14-person quality assurance team through a comprehensive transformation when our company unexpectedly relocated operations to the European Union. Having joined the company just two months prior in January 2022, I needed to rapidly adapt my leadership approach when the relocation was announced in March 2022.
+                    As Head of QA, I led our <span className="bg-yellow-100 px-1 rounded">14-person quality assurance team</span> through a comprehensive transformation when our company unexpectedly relocated operations to the European Union. Having joined the company just <span className="font-bold text-accent-error">two months prior</span> in January 2022, I needed to rapidly adapt my leadership approach when the relocation was announced in March 2022.
                   </p>
                   <p className="text-lg text-primary-text leading-relaxed">
-                    Our team, originally composed entirely of CIS region professionals communicating primarily in Russian, supported five distinct product lines across multiple technical domains, all of which needed continuous quality support during this business-critical transition.
+                    Our team, originally composed entirely of CIS region professionals communicating primarily in Russian, supported <span className="italic font-semibold text-primary-dark">five distinct product lines</span> across multiple technical domains, all of which needed continuous quality support during this business-critical transition.
                   </p>
 
                   <div className="grid md:grid-cols-3 gap-4 mt-8">
@@ -208,7 +200,7 @@ export default function TransformationCaseStudy3() {
                 </div>
 
                 <p className="text-lg text-primary-text leading-relaxed mb-6">
-                  Beyond the personal shock of this significant change to my own role expectations, we faced an existential business crisis that demanded immediate action while managing near-complete team dissolution. The transition triggered unprecedented attrition, with only one original team member remaining after a year.
+                  Beyond the personal shock of this significant change to my own role expectations, we faced an <span className="italic font-semibold text-primary-dark">existential business crisis</span> that demanded immediate action while managing <span className="font-bold text-accent-error">near-complete team dissolution</span>. The transition triggered unprecedented attrition, with only <span className="bg-yellow-100 px-1 rounded">one original team member remaining</span> after a year.
                 </p>
 
                 <div className="bg-white rounded-2xl p-6 mb-6">
@@ -234,7 +226,7 @@ export default function TransformationCaseStudy3() {
                 </div>
 
                 <p className="text-lg text-primary-text leading-relaxed">
-                  We needed to simultaneously maintain service continuity, recruit across multiple regions, establish new communication frameworks across time zones, and integrate diverse cultural backgrounds—all while the company was "fighting for its life" in emergency mode. The compressed timeline eliminated options for formal cultural integration programs, creating a pressure-cooker environment demanding pragmatic crisis management.
+                  We needed to simultaneously maintain service continuity, recruit across multiple regions, establish new communication frameworks across time zones, and integrate diverse cultural backgrounds—all while the company was <span className="font-bold text-accent-error">"fighting for its life"</span> in emergency mode. The compressed timeline eliminated options for formal cultural integration programs, creating a <span className="bg-yellow-100 px-1 rounded">pressure-cooker environment</span> demanding <span className="italic font-semibold text-primary-dark">pragmatic crisis management</span>.
                 </p>
               </div>
             </div>
@@ -277,7 +269,7 @@ export default function TransformationCaseStudy3() {
 
                         <Icon className="h-8 w-8 text-primary-dark mb-4" />
                         <h3 className="text-lg font-semibold text-primary-dark mb-2">{strategy.title}</h3>
-                        <p className="text-sm text-primary-text/60 mb-4">{strategy.description}</p>
+                        <p className="text-sm text-primary-dark/80 font-medium mb-4">{strategy.description}</p>
 
                         {isExpanded && (
                           <div className="animate-fade-in">
@@ -309,13 +301,13 @@ export default function TransformationCaseStudy3() {
 
                   <div className="space-y-6 text-lg text-primary-text leading-relaxed">
                     <p>
-                      What once seemed like an impossible challenge—rebuilding an entire QA function while keeping five product lines running—transformed into one of our greatest achievements. Within 6-7 months, the team not only survived but emerged stronger, with all quality metrics intact despite the storm we'd weathered.
+                      What once seemed like an impossible challenge—<span className="bg-yellow-100 px-1 rounded">rebuilding an entire QA function</span> while keeping five product lines running—transformed into one of our greatest achievements. Within <span className="font-bold text-accent-error">6-7 months</span>, the team not only survived but emerged stronger, with all quality metrics intact despite the storm we'd weathered.
                     </p>
                     <p>
-                      The moment when client feedback began highlighting our seamless transition—unaware of the behind-the-scenes upheaval—felt like finally reaching solid ground after months at sea. The approach of working through key team members proved invaluable, creating islands of stability that others could cling to during uncertainty.
+                      The moment when client feedback began highlighting our <span className="italic font-semibold text-primary-dark">seamless transition</span>—unaware of the behind-the-scenes upheaval—felt like finally reaching solid ground after months at sea. The approach of working through key team members proved invaluable, creating <span className="bg-yellow-100 px-1 rounded">islands of stability</span> that others could cling to during uncertainty.
                     </p>
                     <p>
-                      Most telling was watching team members who once questioned their future begin taking ownership of their new roles, creating a resilient multinational quality organization where language and cultural differences became strengths rather than barriers.
+                      Most telling was watching team members who once questioned their future begin taking ownership of their new roles, creating a <span className="font-bold text-accent-error">resilient multinational quality organization</span> where language and cultural differences became <span className="italic font-semibold text-primary-dark">strengths rather than barriers</span>.
                     </p>
                   </div>
 
