@@ -101,16 +101,20 @@ export default function AutomationCaseStudy1() {
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-wrap gap-3 mb-8">
               <span className="px-4 py-2 bg-primary-dark text-white rounded-lg flex items-center gap-2">
-                <Building className="h-4 w-4" />
-                SberDevices
+                <Rocket className="h-4 w-4" />
+                0 to 1 Automation Department
+              </span>
+              <span className="px-4 py-2 bg-white border border-background-light-gray rounded-lg flex items-center gap-2">
+                <Users className="h-4 w-4" />
+                Built 14-Person Team
+              </span>
+              <span className="px-4 py-2 bg-white border border-background-light-gray rounded-lg flex items-center gap-2">
+                <Layers className="h-4 w-4" />
+                Unified Scalable Solution
               </span>
               <span className="px-4 py-2 bg-white border border-background-light-gray rounded-lg flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
                 2020-2022
-              </span>
-              <span className="px-4 py-2 bg-white border border-background-light-gray rounded-lg flex items-center gap-2">
-                <Rocket className="h-4 w-4" />
-                Go-to-Market Startup
               </span>
             </div>
 
