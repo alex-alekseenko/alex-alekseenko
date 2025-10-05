@@ -90,7 +90,7 @@ export default function TransformationCaseStudy3() {
 
       {/* Animated Hero Section */}
       <section className="pt-24 pb-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-transparent to-blue-100/50"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-blue-50 to-blue-200"></div>
 
         <div className="container-max relative z-10">
           <Link href="/#case-studies" className="inline-flex items-center text-primary-text hover:text-primary-dark mb-8 group">
@@ -118,8 +118,8 @@ export default function TransformationCaseStudy3() {
               Crisis-Driven<br />QA Team Transformation
             </h1>
 
-            <p className="text-xl text-primary-text/80 max-w-3xl leading-relaxed">
-              What once seemed like an impossible challenge transformed into one of our greatest achievements
+            <p className="text-xl text-primary-text/80 max-w-3xl leading-relaxed font-light italic">
+              "What once seemed like an impossible challenge transformed into one of our greatest achievements"
             </p>
           </div>
         </div>
@@ -288,9 +288,9 @@ export default function TransformationCaseStudy3() {
                           </div>
                         )}
 
-                        <div className={`text-sm mt-4 font-medium bg-gradient-to-r ${strategy.color} bg-clip-text text-transparent`}>
+                        <button className="text-sm mt-4 px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors">
                           {isExpanded ? 'Click to collapse' : 'Click to expand'}
-                        </div>
+                        </button>
                       </div>
                     </div>
                   );
