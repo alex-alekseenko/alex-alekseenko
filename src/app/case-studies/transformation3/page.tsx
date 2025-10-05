@@ -118,25 +118,28 @@ export default function TransformationCaseStudy3() {
               Crisis-Driven<br />QA Team Transformation
             </h1>
 
-            {/* Compact Metrics */}
-            <div className="flex gap-8 mb-8">
+            <p className="text-xl text-primary-dark max-w-3xl leading-relaxed font-semibold italic mb-8">
+              "What once seemed like an impossible challenge transformed into one of my greatest achievements"
+            </p>
+
+            {/* Compact Metrics Cards */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {metrics.map((metric) => {
                 const Icon = metric.icon;
                 return (
-                  <div key={metric.id} className="flex items-center gap-3">
-                    <Icon className="h-5 w-5 text-primary-dark" />
-                    <div>
-                      <div className="text-2xl font-bold text-primary-dark">{metric.value}</div>
+                  <div
+                    key={metric.id}
+                    className="relative group"
+                  >
+                    <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                      <Icon className="h-6 w-6 text-primary-dark mb-2 group-hover:scale-110 transition-transform" />
+                      <div className="text-3xl font-bold text-primary-dark mb-1">{metric.value}</div>
                       <div className="text-xs text-primary-text/60 uppercase tracking-wider">{metric.label}</div>
                     </div>
                   </div>
                 );
               })}
             </div>
-
-            <p className="text-xl text-primary-dark max-w-3xl leading-relaxed font-semibold italic">
-              "What once seemed like an impossible challenge transformed into one of my greatest achievements"
-            </p>
           </div>
         </div>
       </section>
@@ -157,7 +160,7 @@ export default function TransformationCaseStudy3() {
                 </div>
                 <div className="p-10">
                   <p className="text-lg text-primary-text leading-relaxed mb-6">
-                    As Head of QA, I led our <mark className="bg-green-200/60 px-2 py-0.5">14-person quality assurance team</mark> through a comprehensive transformation when our company unexpectedly relocated operations to the European Union. Having joined the company just <span className="font-bold text-accent-error">two months prior</span> in January 2022, I needed to rapidly adapt my leadership approach when the relocation was announced in March 2022.
+                    As Head of QA, I led our <mark className="marker-highlight">14-person quality assurance team</mark> through a comprehensive transformation when our company unexpectedly relocated operations to the European Union. Having joined the company just <span className="font-bold text-accent-error">two months prior</span> in January 2022, I needed to rapidly adapt my leadership approach when the relocation was announced in March 2022.
                   </p>
                   <p className="text-lg text-primary-text leading-relaxed">
                     Our team, originally composed entirely of CIS region professionals communicating primarily in Russian, supported <span className="italic font-semibold text-primary-dark">five distinct product lines</span> across multiple technical domains, all of which needed continuous quality support during this business-critical transition.
@@ -193,7 +196,7 @@ export default function TransformationCaseStudy3() {
                 </div>
 
                 <p className="text-lg text-primary-text leading-relaxed mb-6">
-                  Beyond the personal shock of this significant change to my own role expectations, we faced an <span className="italic font-semibold text-primary-dark">existential business crisis</span> that demanded immediate action while managing <span className="font-bold text-accent-error">near-complete team dissolution</span>. The transition triggered unprecedented attrition, with only <mark className="bg-green-200/60 px-2 py-0.5">one original team member remaining</mark> after a year.
+                  Beyond the personal shock of this significant change to my own role expectations, we faced an <span className="italic font-semibold text-primary-dark">existential business crisis</span> that demanded immediate action while managing <span className="font-bold text-accent-error">near-complete team dissolution</span>. The transition triggered unprecedented attrition, with only <mark className="marker-highlight">one original team member remaining</mark> after a year.
                 </p>
 
                 <div className="bg-white rounded-2xl p-6 mb-6">
@@ -219,7 +222,7 @@ export default function TransformationCaseStudy3() {
                 </div>
 
                 <p className="text-lg text-primary-text leading-relaxed">
-                  We needed to simultaneously maintain service continuity, recruit across multiple regions, establish new communication frameworks across time zones, and integrate diverse cultural backgrounds—all while the company was <span className="font-bold text-accent-error">"fighting for its life"</span> in emergency mode. The compressed timeline eliminated options for formal cultural integration programs, creating a <mark className="bg-green-200/60 px-2 py-0.5">pressure-cooker environment</mark> demanding <span className="italic font-semibold text-primary-dark">pragmatic crisis management</span>.
+                  We needed to simultaneously maintain service continuity, recruit across multiple regions, establish new communication frameworks across time zones, and integrate diverse cultural backgrounds—all while the company was <span className="font-bold text-accent-error">"fighting for its life"</span> in emergency mode. The compressed timeline eliminated options for formal cultural integration programs, creating a <mark className="marker-highlight">pressure-cooker environment</mark> demanding <span className="italic font-semibold text-primary-dark">pragmatic crisis management</span>.
                 </p>
               </div>
             </div>
@@ -294,10 +297,10 @@ export default function TransformationCaseStudy3() {
 
                   <div className="space-y-6 text-lg text-primary-text leading-relaxed">
                     <p>
-                      What once seemed like an impossible challenge—<mark className="bg-green-200/60 px-2 py-0.5">rebuilding an entire QA function</mark> while keeping five product lines running—transformed into one of our greatest achievements. Within <span className="font-bold text-accent-error">6-7 months</span>, the team not only survived but emerged stronger, with all quality metrics intact despite the storm we'd weathered.
+                      What once seemed like an impossible challenge—<mark className="marker-highlight">rebuilding an entire QA function</mark> while keeping five product lines running—transformed into one of our greatest achievements. Within <span className="font-bold text-accent-error">6-7 months</span>, the team not only survived but emerged stronger, with all quality metrics intact despite the storm we'd weathered.
                     </p>
                     <p>
-                      The moment when client feedback began highlighting our <span className="italic font-semibold text-primary-dark">seamless transition</span>—unaware of the behind-the-scenes upheaval—felt like finally reaching solid ground after months at sea. The approach of working through key team members proved invaluable, creating <mark className="bg-green-200/60 px-2 py-0.5">islands of stability</mark> that others could cling to during uncertainty.
+                      The moment when client feedback began highlighting our <span className="italic font-semibold text-primary-dark">seamless transition</span>—unaware of the behind-the-scenes upheaval—felt like finally reaching solid ground after months at sea. The approach of working through key team members proved invaluable, creating <mark className="marker-highlight">islands of stability</mark> that others could cling to during uncertainty.
                     </p>
                     <p>
                       Most telling was watching team members who once questioned their future begin taking ownership of their new roles, creating a <span className="font-bold text-accent-error">resilient multinational quality organization</span> where language and cultural differences became <span className="italic font-semibold text-primary-dark">strengths rather than barriers</span>.
