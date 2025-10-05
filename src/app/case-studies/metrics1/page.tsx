@@ -337,7 +337,7 @@ export default function MetricsCaseStudy1() {
                 </div>
 
                 {/* Success Metrics */}
-                <div className="grid md:grid-cols-5 gap-4">
+                <div className="grid md:grid-cols-4 gap-4">
                   <div className="bg-white rounded-xl p-4 border border-gray-200">
                     <CheckCircle2 className="h-6 w-6 text-primary-dark mb-2" />
                     <div className="font-semibold text-primary-dark">3x</div>
@@ -347,11 +347,6 @@ export default function MetricsCaseStudy1() {
                     <CheckCircle2 className="h-6 w-6 text-primary-dark mb-2" />
                     <div className="font-semibold text-primary-dark">73%</div>
                     <div className="text-sm text-primary-text/60">Velocity Increase</div>
-                  </div>
-                  <div className="bg-white rounded-xl p-4 border border-gray-200">
-                    <CheckCircle2 className="h-6 w-6 text-primary-dark mb-2" />
-                    <div className="font-semibold text-primary-dark">0%</div>
-                    <div className="text-sm text-primary-text/60">Headcount Growth</div>
                   </div>
                   <div className="bg-white rounded-xl p-4 border border-gray-200">
                     <CheckCircle2 className="h-6 w-6 text-primary-dark mb-2" />
