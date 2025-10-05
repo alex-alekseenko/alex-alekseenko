@@ -11,10 +11,10 @@ export default function AutomationCaseStudy1() {
   const [hoveredMetric, setHoveredMetric] = useState<string | null>(null);
 
   const metrics = [
-    { id: "company", value: "SberDevices", label: "Company", icon: Building, detail: "900-person innovation startup within major bank" },
+    { id: "zero-to-one", value: "0→1", label: "Built Department", icon: Rocket, detail: "Created automation department from scratch" },
     { id: "timeline", value: "2020-2022", label: "Timeline", icon: Calendar, detail: "2-year transformation period" },
-    { id: "team", value: "14", label: "Team Built", icon: Users, detail: "Built automation team from scratch" },
-    { id: "startup", value: "900", label: "Startup Size", icon: Globe, detail: "Large-scale innovation department" }
+    { id: "team", value: "14", label: "Team Hired", icon: Users, detail: "Built automation team from ground up" },
+    { id: "solution", value: "Unified", label: "Scalable Solution", icon: Layers, detail: "Multi-framework architecture" }
   ];
 
   const strategies = [
