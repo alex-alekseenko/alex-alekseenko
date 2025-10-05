@@ -263,8 +263,8 @@ export default function TransformationCaseStudy3() {
                         <div className={`w-full h-2 bg-gradient-to-r ${strategy.color} rounded-full mb-4`}></div>
 
                         <Icon className="h-8 w-8 text-primary-dark mb-3" />
-                        <h3 className="text-lg font-semibold text-primary-dark mb-2 line-clamp-1">{strategy.title}</h3>
-                        <p className="text-sm text-primary-dark/80 font-medium mb-3 line-clamp-1">{strategy.description}</p>
+                        <h3 className="text-lg font-semibold text-primary-dark mb-2">{strategy.title}</h3>
+                        <p className="text-sm text-primary-dark/80 font-medium mb-3">{strategy.description}</p>
 
                         {isExpanded && (
                           <div className="animate-fade-in">
