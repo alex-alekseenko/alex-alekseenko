@@ -198,17 +198,7 @@ export default function AutomationCaseStudy1() {
 
                 <div className="space-y-6 text-lg text-primary-text leading-relaxed mb-8">
                   <p>
-                    I faced <mark className="marker-highlight">multilayered challenges</mark> requiring both technical and organizational solutions:
-                  </p>
-                  <ul className="list-disc list-inside space-y-2 ml-4">
-                    <li><strong>Regulatory constraints:</strong> Enterprise banking environment where every access request required weeks of compliance reviews</li>
-                    <li><strong>Greenfield build:</strong> No existing test automation team or infrastructure to build upon</li>
-                    <li><strong>Technology diversity:</strong> Web applications, Android devices, voice assistants with NLP, complex backend integrations</li>
-                    <li><strong>Cultural resistance:</strong> Development teams accustomed to their own testing approaches</li>
-                    <li><strong>Aggressive timelines:</strong> Pressure to capture market share before competitors</li>
-                  </ul>
-                  <p>
-                    The solution needed to cover disparate technologies while building trust with development teams and establishing a new centralized automation function from scratch.
+                    I faced multilayered challenges requiring both technical and organizational solutions. The environment combined <mark className="marker-highlight">startup-level urgency with enterprise banking constraints</mark>—every access request between services or environments required weeks of compliance reviews and approvals. There was <mark className="marker-highlight">no existing test automation team or infrastructure</mark>, requiring me to define, hire, and build this function from scratch while simultaneously defining the architecture. The solution needed to cover disparate technologies including web applications, Android devices, voice assistants with NLP capabilities, and complex backend integrations. Additionally, I needed to build trust with development teams who were accustomed to their own testing approaches but weren't yet familiar with centralized automation strategies. All of this occurred under <mark className="marker-highlight">relentless deadline pressure</mark> as the business pushed to capture market share before competitors.
                   </p>
                 </div>
 
