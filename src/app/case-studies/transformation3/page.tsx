@@ -31,7 +31,7 @@ export default function TransformationCaseStudy3() {
       title: "SCARF Model",
       icon: Brain,
       color: "from-purple-500 to-purple-600",
-      description: "Emotional Intelligence Framework",
+      description: "Emotional Framework",
       fullContent: "Applied the SCARF model—analyzing each person's potential losses in Status (professional standing), Certainty (predictability), Autonomy (control), Relatedness (belonging), and Fairness (equitable treatment)—to pinpoint the emotional roots of change resistance. For example, when a QA engineer feared losing autonomy in the new structure, I reframed it by offering leadership opportunities to mentor junior team members, converting a perceived loss into a growth pathway"
     },
     {
@@ -52,7 +52,7 @@ export default function TransformationCaseStudy3() {
     },
     {
       id: "communication",
-      title: "Predictable Communication",
+      title: "Clear Communication",
       icon: Calendar,
       color: "from-indigo-500 to-indigo-600",
       description: "Consistent Rhythms",
