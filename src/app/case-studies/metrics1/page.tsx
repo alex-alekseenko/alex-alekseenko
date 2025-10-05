@@ -198,13 +198,13 @@ export default function MetricsCaseStudy1() {
 
                 <div className="space-y-6 text-lg text-primary-text leading-relaxed mb-8">
                   <p>
-                    Implementing a comprehensive metrics framework faced multiple, interconnected challenges that required both <mark className="marker-highlight">technical and cultural transformation</mark>.
+                    Implementing a comprehensive metrics framework faced multiple, interconnected challenges. The fundamental shift toward data-driven management represented a <mark className="marker-highlight">cultural departure from the team's established practices</mark>, triggering resistance—particularly from those benefiting from the previous lack of visibility.
                   </p>
                   <p>
-                    The organization had <mark className="marker-highlight">no existing analytics infrastructure</mark>—only manual Excel reporting that was time-consuming and error-prone. Additionally, introducing measurement systems often triggers resistance, as team members fear being unfairly judged or micromanaged based on incomplete data.
+                    As a manager of a fully distributed team, I needed to establish a clear system for tracking and managing remote workers—the <mark className="marker-highlight">metrics initiative was my strategic response</mark> to this critical challenge of remote oversight.
                   </p>
                   <p>
-                    Most critically, I needed to ensure the metrics framework would actually <mark className="marker-highlight">drive positive behavior</mark> rather than creating perverse incentives where engineers gamed the system or focused on vanity metrics disconnected from real quality outcomes.
+                    Additionally, technical barriers created significant hurdles—we had <mark className="marker-highlight">no dedicated analytics platform</mark>, relying solely on manually updated Excel spreadsheets for reporting, which made real-time insights impossible and data collection error-prone. Creating a sophisticated measurement system would require not just process changes but building an entire technical infrastructure from scratch without the luxury of dedicated BI resources or established data pipelines.
                   </p>
                 </div>
 
@@ -315,10 +315,13 @@ export default function MetricsCaseStudy1() {
                 <div className="bg-white rounded-2xl p-8 shadow-md mb-8">
                   <div className="space-y-6 text-lg text-primary-text leading-relaxed">
                     <p>
-                      The metrics transformation delivered remarkable business impact across multiple dimensions. Beyond the numbers, the initiative fundamentally changed stakeholder dynamics. <mark className="marker-highlight">Client conversations shifted from subjective debates</mark> about resource utilization to data-driven discussions about quality outcomes and strategic investments.
+                      The metrics transformation delivered remarkable business impact: defect leakage decreased by <mark className="marker-highlight">3x (down to just 3.1%)</mark> while simultaneously supporting a 73% increase in development velocity and accommodating 33% growth in the development team—all without expanding QA headcount. Only 7% of planned releases faced postponement.
                     </p>
                     <p>
-                      Within the team, performance visibility created a culture where actual contributions determined recognition and rewards, allowing <mark className="marker-highlight">high performers to finally shine based on real results</mark> rather than perception, while underperformers could no longer hide.
+                      Beyond the numbers, the initiative fundamentally changed stakeholder dynamics. <mark className="marker-highlight">Client conversations shifted from subjective debates</mark> about resource utilization to data-driven discussions about quality outcomes and strategic investments.
+                    </p>
+                    <p>
+                      Within the team, performance visibility created a culture where actual contributions determined recognition and rewards, allowing <mark className="marker-highlight">high performers to finally shine based on real results</mark> rather than perception, while underperformers could no longer hide. The balanced workload distribution significantly reduced burnout and overwork, while increased autonomy and predictability improved overall team satisfaction.
                     </p>
                   </div>
 
