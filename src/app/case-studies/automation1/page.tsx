@@ -11,7 +11,7 @@ export default function AutomationCaseStudy1() {
   const [hoveredMetric, setHoveredMetric] = useState<string | null>(null);
 
   const metrics = [
-    { id: "zero-to-one", value: "0→1", label: "Built Department", icon: Rocket, detail: "Created automation department from scratch" },
+    { id: "zero-to-one", value: "0 to 1", label: "Automation Department", icon: Rocket, detail: "Created automation department from scratch" },
     { id: "timeline", value: "2020-2022", label: "Timeline", icon: Calendar, detail: "2-year transformation period" },
     { id: "team", value: "14", label: "Team Hired", icon: Users, detail: "Built automation team from ground up" },
     { id: "solution", value: "Unified", label: "Scalable Solution", icon: Layers, detail: "Multi-framework architecture" }
