@@ -325,7 +325,7 @@ export default function TransformationCaseStudy3() {
                       <Sparkles className="h-6 w-6 text-primary-dark" />
                       <h3 className="text-xl font-semibold text-primary-dark">Key Insight</h3>
                     </div>
-                    <p className="text-base text-primary-text leading-relaxed">
+                    <p className="text-lg text-primary-text leading-relaxed">
                       In crisis lies opportunity—what started as an unwelcome disruption ultimately created a more adaptable, diverse quality team better positioned for future challenges.
                     </p>
                   </div>
