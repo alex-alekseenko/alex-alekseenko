@@ -326,7 +326,7 @@ export default function TransformationCaseStudy3() {
                       <h3 className="text-xl font-semibold text-primary-dark">Key Insight</h3>
                     </div>
                     <p className="text-base text-primary-text leading-relaxed">
-                      Perhaps the most powerful lesson: in crisis lies opportunity—what started as an unwelcome disruption ultimately created a more adaptable, diverse quality team better positioned for future challenges.
+                      In crisis lies opportunity—what started as an unwelcome disruption ultimately created a more adaptable, diverse quality team better positioned for future challenges.
                     </p>
                   </div>
                 </div>
