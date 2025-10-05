@@ -332,7 +332,12 @@ export default function TransformationCaseStudy3() {
                 </div>
 
                 {/* Success Metrics */}
-                <div className="grid md:grid-cols-4 gap-4">
+                <div className="grid md:grid-cols-5 gap-4">
+                  <div className="bg-white rounded-xl p-4 border border-gray-200">
+                    <CheckCircle2 className="h-6 w-6 text-primary-dark mb-2" />
+                    <div className="font-semibold text-primary-dark">6-7 Months</div>
+                    <div className="text-sm text-primary-text/60">To Rebuild</div>
+                  </div>
                   <div className="bg-white rounded-xl p-4 border border-gray-200">
                     <CheckCircle2 className="h-6 w-6 text-primary-dark mb-2" />
                     <div className="font-semibold text-primary-dark">100%</div>
