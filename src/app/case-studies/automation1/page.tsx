@@ -12,7 +12,6 @@ export default function AutomationCaseStudy1() {
 
   const metrics = [
     { id: "zero-to-one", value: "0 to 1", label: "Automation Department", icon: Rocket, detail: "Created automation department from scratch" },
-    { id: "timeline", value: "2020-2022", label: "Timeline", icon: Calendar, detail: "2-year transformation period" },
     { id: "team", value: "14", label: "Team Hired", icon: Users, detail: "Built automation team from ground up" },
     { id: "solution", value: "Unified", label: "Scalable Solution", icon: Layers, detail: "Multi-framework architecture" }
   ];
@@ -123,7 +122,7 @@ export default function AutomationCaseStudy1() {
             </p>
 
             {/* Compact Metrics Cards */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {metrics.map((metric) => {
               const Icon = metric.icon;
               return (
