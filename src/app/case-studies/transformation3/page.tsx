@@ -127,14 +127,13 @@ export default function TransformationCaseStudy3() {
               {metrics.map((metric) => {
                 const Icon = metric.icon;
                 return (
-                  <div
-                    key={metric.id}
-                    className="relative group"
-                  >
-                    <div className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
-                      <Icon className="h-6 w-6 text-primary-dark mb-2 group-hover:scale-110 transition-transform" />
-                      <div className="text-3xl font-bold text-primary-dark mb-1">{metric.value}</div>
-                      <div className="text-xs text-primary-text/60 uppercase tracking-wider">{metric.label}</div>
+                  <div key={metric.id} className="relative group">
+                    <div className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 flex items-start gap-3">
+                      <Icon className="h-8 w-8 text-primary-dark group-hover:scale-110 transition-transform flex-shrink-0 mt-1" />
+                      <div>
+                        <div className="text-3xl font-bold text-primary-dark leading-none">{metric.value}</div>
+                        <div className="text-xs text-primary-text/60 uppercase tracking-wider leading-tight mt-1">{metric.label}</div>
+                      </div>
                     </div>
                   </div>
                 );
