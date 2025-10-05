@@ -2,19 +2,18 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, Building, Calendar, Users, Target, AlertTriangle, Code, Zap, CheckCircle2, Rocket, Layers, Server, Smartphone, Globe } from "lucide-react";
+import { ArrowLeft, ChevronRight, Users, Target, Shield, Zap, Trophy, Calendar, MapPin, Building, BarChart3, Globe, Clock, AlertTriangle, CheckCircle2, Layers, Brain, Heart, Sparkles, Code, Server, Smartphone, Rocket } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-export default function AutomationCaseStudy() {
+export default function AutomationCaseStudy1() {
   const [expandedCard, setExpandedCard] = useState<string | null>(null);
   const [hoveredMetric, setHoveredMetric] = useState<string | null>(null);
 
   const metrics = [
-    { id: "company", value: "SberDevices", label: "Company", icon: Building, detail: "900-person innovation startup within major bank" },
-    { id: "timeline", value: "2020-2022", label: "Timeline", icon: Calendar, detail: "2-year transformation period" },
-    { id: "team", value: "14", label: "Team Built", icon: Users, detail: "Built automation team from scratch" },
-    { id: "environment", value: "900", label: "Startup Size", icon: Globe, detail: "Large-scale innovation department" }
+    { id: "zero-to-one", value: "0 to 1", label: "Automation Department", icon: Rocket, detail: "Created automation department from scratch" },
+    { id: "team", value: "14", label: "Team Hired", icon: Users, detail: "Built automation team from ground up" },
+    { id: "solution", value: "Unified", label: "Scalable Solution", icon: Layers, detail: "Multi-framework architecture" }
   ];
 
   const strategies = [
@@ -88,9 +87,9 @@ export default function AutomationCaseStudy() {
     <div className="min-h-screen bg-gradient-to-b from-white to-background-subtle-gray">
       <Navigation />
 
-      {/* Hero Section */}
+      {/* Animated Hero Section */}
       <section className="pt-24 pb-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-blue-50 to-blue-200"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-emerald-100"></div>
 
         <div className="container-max relative z-10">
           <Link href="/#case-studies" className="inline-flex items-center text-primary-text hover:text-primary-dark mb-8 group">
@@ -98,17 +97,32 @@ export default function AutomationCaseStudy() {
             <span>Back to Portfolio</span>
           </Link>
 
-          <h1 className="text-5xl md:text-6xl font-light text-primary-dark mb-6 leading-tight">
-            Enterprise Test Automation<br />
-            <span className="font-semibold">Architecture for Smart Devices</span>
-          </h1>
+          <div className="max-w-6xl mx-auto">
+            <div className="flex flex-wrap gap-3 mb-8">
+              <span className="px-4 py-2 bg-primary-dark text-white rounded-lg flex items-center gap-2">
+                <Building className="h-4 w-4" />
+                SberDevices
+              </span>
+              <span className="px-4 py-2 bg-white border border-background-light-gray rounded-lg flex items-center gap-2">
+                <Calendar className="h-4 w-4" />
+                2020-2022
+              </span>
+              <span className="px-4 py-2 bg-white border border-background-light-gray rounded-lg flex items-center gap-2">
+                <Rocket className="h-4 w-4" />
+                Go-to-Market Startup
+              </span>
+            </div>
 
-          <p className="text-xl text-primary-text max-w-3xl leading-relaxed mb-12">
-            Building comprehensive test automation from scratch for a major banking innovation department developing smart devices to compete with Amazon Alexa
-          </p>
+            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-primary-dark to-primary-text bg-clip-text text-transparent mb-8">
+              Enterprise<br />Test Automation Architecture
+            </h1>
 
-          {/* Metrics Cards */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            <p className="text-xl text-primary-dark max-w-3xl leading-relaxed font-semibold italic mb-8">
+              "Building automation excellence in a regulated banking environment while racing against market pressures"
+            </p>
+
+            {/* Compact Metrics Cards */}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {metrics.map((metric) => {
               const Icon = metric.icon;
               return (
@@ -123,33 +137,53 @@ export default function AutomationCaseStudy() {
                 </div>
               );
             })}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Main Content */}
+      {/* Story Sections with Cards */}
       <section className="py-16">
         <div className="container-max">
-          <div className="max-w-5xl mx-auto space-y-12">
+          <div className="max-w-6xl mx-auto">
 
             {/* Situation Section */}
             <div className="mb-12">
               <div className="bg-white rounded-3xl shadow-xl p-10">
                 <div className="flex items-center gap-4 mb-6">
-                  <Building className="h-10 w-10 text-primary-dark" />
+                  <Target className="h-10 w-10 text-primary-dark" />
                   <h2 className="text-3xl font-bold text-primary-dark">The Situation</h2>
                 </div>
 
                 <div className="space-y-6 text-lg text-primary-text leading-relaxed">
                   <p>
-                    I joined a major Russian bank's new innovation department focused on developing smart devices and voice assistants, essentially a 900-person startup operating within a regulated banking environment. The department was tasked with creating a competitive product to rival Amazon Alexa, targeting both consumer markets and specialized hotel solutions.
+                    I joined a major Russian bank's new innovation department focused on developing smart devices and voice assistants, essentially a <mark className="marker-highlight">900-person startup operating within a regulated banking environment</mark>. The department was tasked with creating a competitive product to rival Amazon Alexa, targeting both consumer markets and specialized hotel solutions.
                   </p>
                   <p>
-                    When I arrived, testing was entirely fragmented—developers performed ad-hoc testing based on individual preferences, with no standardized approach or reusable assets. Manual QA teams were overwhelmed by growing regression needs, with each incremental change requiring significant validation effort.
+                    When I arrived, testing was <mark className="marker-highlight">entirely fragmented</mark>—developers performed ad-hoc testing based on individual preferences, with no standardized approach or reusable assets. Manual QA teams were overwhelmed by growing regression needs, with each incremental change requiring significant validation effort.
                   </p>
                   <p>
-                    The initiative was barely a year old with no production release yet, but faced aggressive go-to-market timelines and high executive visibility as a flagship innovation project for the bank.
+                    The initiative was barely a year old with <mark className="marker-highlight">no production release yet</mark>, but faced aggressive go-to-market timelines and high executive visibility as a flagship innovation project for the bank.
                   </p>
+                </div>
+
+                {/* Context Metrics */}
+                <div className="grid md:grid-cols-3 gap-4 mt-8">
+                  <div className="bg-background-subtle-gray rounded-xl p-4">
+                    <Globe className="h-6 w-6 text-primary-dark mb-2" />
+                    <div className="font-semibold text-primary-dark">Ad-hoc Testing</div>
+                    <div className="text-sm text-primary-text/60">No standardized approach</div>
+                  </div>
+                  <div className="bg-background-subtle-gray rounded-xl p-4">
+                    <Rocket className="h-6 w-6 text-primary-dark mb-2" />
+                    <div className="font-semibold text-primary-dark">Aggressive R&D Process</div>
+                    <div className="text-sm text-primary-text/60">Go-to-market timeline pressure</div>
+                  </div>
+                  <div className="bg-background-subtle-gray rounded-xl p-4">
+                    <Target className="h-6 w-6 text-primary-dark mb-2" />
+                    <div className="font-semibold text-primary-dark">High Visibility</div>
+                    <div className="text-sm text-primary-text/60">Flagship innovation project</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -164,7 +198,13 @@ export default function AutomationCaseStudy() {
 
                 <div className="space-y-6 text-lg text-primary-text leading-relaxed mb-8">
                   <p>
-                    I faced multilayered challenges requiring both technical and organizational solutions to build an enterprise test automation architecture from the ground up.
+                    I faced multilayered challenges requiring both technical and organizational solutions. The environment combined <mark className="marker-highlight">startup-level urgency with enterprise banking constraints</mark>—every access request between services or environments required weeks of compliance reviews and approvals.
+                  </p>
+                  <p>
+                    There was <mark className="marker-highlight">no existing test automation team or infrastructure</mark>, requiring me to define, hire, and build this function from scratch while simultaneously defining the architecture. The solution needed to cover disparate technologies including web applications, Android devices, voice assistants with NLP capabilities, and complex backend integrations.
+                  </p>
+                  <p>
+                    Additionally, I needed to build trust with development teams who were accustomed to their own testing approaches but weren't yet familiar with centralized automation strategies. All of this occurred under <mark className="marker-highlight">relentless deadline pressure</mark> as the business pushed to capture market share before competitors.
                   </p>
                 </div>
 
@@ -202,16 +242,17 @@ export default function AutomationCaseStudy() {
             {/* Action Section */}
             <div className="mb-12">
               <div className="bg-white rounded-3xl shadow-xl p-10">
-                <div className="flex items-center gap-4 mb-6">
-                  <Rocket className="h-10 w-10 text-primary-dark" />
-                  <h2 className="text-3xl font-bold text-primary-dark">The Action</h2>
+                <div className="mb-8">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Rocket className="h-10 w-10 text-primary-dark" />
+                    <h2 className="text-3xl font-bold text-primary-dark">Strategic Action Plan</h2>
+                  </div>
+                  <p className="text-primary-text/60">Click each strategy to explore the implementation details</p>
                 </div>
 
-                <div className="space-y-6 text-lg text-primary-text leading-relaxed mb-8">
-                  <p>
-                    I developed a comprehensive multi-framework architecture with purpose-built solutions and strategic implementation approach:
-                  </p>
-                </div>
+                <p className="text-lg text-primary-text leading-relaxed mb-8">
+                  I developed a comprehensive multi-framework architecture with purpose-built solutions and strategic implementation approach:
+                </p>
 
                 {/* Strategic Action Plan - Expandable Cards */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -266,7 +307,7 @@ export default function AutomationCaseStudy() {
             <div className="mb-12">
               <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-3xl shadow-xl p-10">
                 <div className="flex items-center gap-4 mb-6">
-                  <CheckCircle2 className="h-10 w-10 text-primary-dark" />
+                  <Trophy className="h-10 w-10 text-primary-dark" />
                   <h2 className="text-3xl font-bold text-primary-dark">The Result</h2>
                 </div>
 
@@ -281,6 +322,16 @@ export default function AutomationCaseStudy() {
                     </p>
                     <p>
                       Most importantly, the framework consistently caught critical issues before release—from broken voice assistant skills to mid-flow Android UI failures and backward compatibility breaks—proving its value in a startup environment where rapid changes often introduced unexpected defects across the technology stack.
+                    </p>
+                  </div>
+
+                  <div className="mt-6 pt-6 border-t border-background-light-gray">
+                    <div className="flex items-center gap-3 mb-3">
+                      <Sparkles className="h-6 w-6 text-primary-dark" />
+                      <h3 className="text-xl font-semibold text-primary-dark">Key Insight</h3>
+                    </div>
+                    <p className="text-lg text-primary-text leading-relaxed">
+                      Building enterprise test automation in a regulated environment requires balancing technical excellence with organizational change management—securing stakeholder buy-in through demonstrable value delivery.
                     </p>
                   </div>
                 </div>
@@ -321,21 +372,24 @@ export default function AutomationCaseStudy() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary-dark to-primary-text">
-        <div className="container-max text-center">
-          <h2 className="text-4xl font-light text-white mb-6">
-            Need Enterprise Test Automation?
-          </h2>
-          <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
-            I specialize in building scalable test automation architectures from the ground up
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Link href="/#contact" className="px-8 py-4 bg-white text-primary-dark font-semibold rounded-full hover:bg-white/90 transition-colors">
-              Discuss Your Architecture
-            </Link>
-            <Link href="/#case-studies" className="px-8 py-4 bg-transparent text-white font-semibold rounded-full border-2 border-white hover:bg-white/10 transition-colors">
-              Explore More Work
-            </Link>
+      <section className="py-20 bg-gradient-to-br from-primary-dark via-primary-text to-primary-dark">
+        <div className="container-max">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Ready to Transform Your Test Automation?
+            </h2>
+            <p className="text-xl text-white/80 mb-10 leading-relaxed">
+              Let's discuss how strategic automation architecture can accelerate your quality engineering
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <Link href="/#contact" className="group inline-flex items-center gap-3 px-8 py-4 bg-white text-primary-dark font-semibold rounded-full hover:bg-white/90 transition-all hover:gap-4">
+                <span>Get Started</span>
+                <ChevronRight className="h-5 w-5" />
+              </Link>
+              <Link href="/#case-studies" className="px-8 py-4 bg-transparent text-white font-semibold rounded-full border-2 border-white hover:bg-white/10 transition-colors">
+                Explore More Success Stories
+              </Link>
+            </div>
           </div>
         </div>
       </section>
