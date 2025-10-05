@@ -298,14 +298,20 @@ export default function TransformationCaseStudy3() {
               </div>
             </div>
 
-            {/* Result Card */}
+            {/* Result Section */}
             <div className="mb-12">
-              <div className="bg-white rounded-3xl shadow-xl p-10">
-                <div className="flex items-center gap-4 mb-6">
-                  <Trophy className="h-10 w-10 text-primary-dark" />
-                  <h2 className="text-3xl font-bold text-primary-dark">The Result</h2>
+              <div className="bg-gradient-to-br from-green-50 to-white rounded-3xl p-10">
+                {/* Title and Icon */}
+                <div className="text-center mb-8">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-accent-success rounded-full mb-4">
+                    <Trophy className="h-8 w-8 text-white" />
+                  </div>
+                  <h2 className="text-3xl font-bold text-primary-dark mb-2">The Transformation</h2>
+                  <p className="text-lg text-primary-text/80 italic">"In crisis lies opportunity"</p>
                 </div>
 
+                {/* Content Card */}
+                <div className="bg-white rounded-2xl p-8 shadow-md">
                   <div className="space-y-6 text-lg text-primary-text leading-relaxed">
                     <p>
                       What once seemed like an impossible challenge—rebuilding an entire QA function while keeping five product lines running—transformed into one of our greatest achievements. Within <mark className="marker-highlight">6-7 months</mark>, the team not only survived but emerged stronger, with <mark className="marker-highlight">all quality metrics intact</mark> despite the storm we'd weathered.
@@ -318,39 +324,32 @@ export default function TransformationCaseStudy3() {
                     </p>
                   </div>
 
-                  <div className="bg-primary-dark text-white rounded-2xl p-8 mt-8">
-                    <h3 className="text-xl font-semibold mb-4 flex items-center gap-3">
-                      <Sparkles className="h-6 w-6" />
-                      Key Insight
-                    </h3>
-                    <p className="text-lg leading-relaxed">
+                  <div className="mt-6 pt-6 border-t border-background-light-gray">
+                    <p className="text-base text-primary-text leading-relaxed">
                       Perhaps the most powerful lesson: in crisis lies opportunity—what started as an unwelcome disruption ultimately created a more adaptable, diverse quality team better positioned for future challenges.
                     </p>
                   </div>
+                </div>
 
-                  {/* Success Metrics */}
-                  <div className="grid md:grid-cols-4 gap-4 mt-8">
-                    <div className="bg-background-subtle-gray rounded-xl p-4">
-                      <CheckCircle2 className="h-6 w-6 text-primary-dark mb-2" />
-                      <div className="font-semibold text-primary-dark">100%</div>
-                      <div className="text-sm text-primary-text/60">Quality Maintained</div>
-                    </div>
-                    <div className="bg-background-subtle-gray rounded-xl p-4">
-                      <CheckCircle2 className="h-6 w-6 text-primary-dark mb-2" />
-                      <div className="font-semibold text-primary-dark">Zero</div>
-                      <div className="text-sm text-primary-text/60">Client Incidents</div>
-                    </div>
-                    <div className="bg-background-subtle-gray rounded-xl p-4">
-                      <CheckCircle2 className="h-6 w-6 text-primary-dark mb-2" />
-                      <div className="font-semibold text-primary-dark">5</div>
-                      <div className="text-sm text-primary-text/60">Products Supported</div>
-                    </div>
-                    <div className="bg-background-subtle-gray rounded-xl p-4">
-                      <CheckCircle2 className="h-6 w-6 text-primary-dark mb-2" />
-                      <div className="font-semibold text-primary-dark">Global</div>
-                      <div className="text-sm text-primary-text/60">Team Diversity</div>
-                    </div>
+                {/* Success Metrics */}
+                <div className="grid md:grid-cols-4 gap-4 mt-8">
+                  <div className="bg-white rounded-xl p-6 text-center shadow-sm">
+                    <div className="text-3xl font-bold text-accent-success mb-1">6-7</div>
+                    <div className="text-sm text-primary-text/70">Months to rebuild</div>
                   </div>
+                  <div className="bg-white rounded-xl p-6 text-center shadow-sm">
+                    <div className="text-3xl font-bold text-accent-success mb-1">100%</div>
+                    <div className="text-sm text-primary-text/70">Quality maintained</div>
+                  </div>
+                  <div className="bg-white rounded-xl p-6 text-center shadow-sm">
+                    <div className="text-3xl font-bold text-accent-success mb-1">5</div>
+                    <div className="text-sm text-primary-text/70">Product lines</div>
+                  </div>
+                  <div className="bg-white rounded-xl p-6 text-center shadow-sm">
+                    <div className="text-3xl font-bold text-accent-success mb-1">0</div>
+                    <div className="text-sm text-primary-text/70">Client incidents</div>
+                  </div>
+                </div>
               </div>
             </div>
 
