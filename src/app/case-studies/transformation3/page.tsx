@@ -250,32 +250,32 @@ export default function TransformationCaseStudy3() {
                   return (
                     <div
                       key={strategy.id}
-                      className={`relative ${isExpanded ? 'md:col-span-2 lg:col-span-2' : ''}`}
+                      className={`relative transition-all duration-700 ease-out ${isExpanded ? 'md:col-span-2 lg:col-span-4 z-10' : ''}`}
                     >
                       <div
                         onClick={() => setExpandedCard(isExpanded ? null : strategy.id)}
                         className={`
-                          bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl
-                          transition-all duration-500 cursor-pointer
-                          ${isExpanded ? 'scale-105' : 'hover:scale-105'}
+                          bg-white rounded-xl p-6 shadow-lg
+                          transition-all duration-700 ease-out cursor-pointer
+                          ${isExpanded ? 'scale-110 shadow-2xl ring-4 ring-primary-dark/10' : 'hover:scale-105 hover:shadow-xl'}
                         `}
                       >
-                        <div className={`w-full h-2 bg-gradient-to-r ${strategy.color} rounded-full mb-4`}></div>
+                        <div className={`w-full h-2 bg-gradient-to-r ${strategy.color} rounded-full mb-4 transition-all duration-500 ${isExpanded ? 'h-3' : ''}`}></div>
 
-                        <Icon className="h-8 w-8 text-primary-dark mb-3" />
-                        <h3 className="text-lg font-semibold text-primary-dark mb-2">{strategy.title}</h3>
-                        <p className="text-sm text-primary-dark/80 font-medium mb-3">{strategy.description}</p>
+                        <Icon className={`text-primary-dark mb-3 transition-all duration-500 ${isExpanded ? 'h-12 w-12' : 'h-8 w-8'}`} />
+                        <h3 className={`font-semibold text-primary-dark mb-2 transition-all duration-500 ${isExpanded ? 'text-2xl' : 'text-lg'}`}>{strategy.title}</h3>
+                        <p className={`text-primary-dark/80 font-medium mb-3 transition-all duration-500 ${isExpanded ? 'text-base' : 'text-sm'}`}>{strategy.description}</p>
 
                         {isExpanded && (
                           <div className="animate-fade-in">
                             <div className="h-px bg-background-light-gray my-4"></div>
-                            <p className="text-base text-primary-text leading-relaxed">
+                            <p className="text-lg text-primary-text leading-relaxed">
                               {strategy.fullContent}
                             </p>
                           </div>
                         )}
 
-                        <button className="text-sm mt-4 px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors">
+                        <button className={`text-sm mt-4 px-4 py-2 bg-primary-dark text-white rounded-lg transition-all duration-300 hover:bg-primary-text ${isExpanded ? 'scale-110' : ''}`}>
                           {isExpanded ? 'Click to collapse' : 'Click to expand'}
                         </button>
                       </div>
