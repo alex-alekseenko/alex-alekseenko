@@ -40,6 +40,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# IDE files
+.idea/
+
 # Claude Code and system files
 .claude/
 .playwright-mcp/

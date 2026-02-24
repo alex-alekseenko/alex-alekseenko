@@ -14,27 +14,27 @@
 
 ## About Me
 
-Senior engineering leader with 10+ years in the tech industry. I started as a QA automation engineer and grew into leading engineering organizations — so I know the domain from both sides.
+Senior engineering leader with **10+ years** in the tech industry. I started as a QA automation engineer and grew into leading engineering organizations — so I know the domain from both sides.
 
-For the last 5+ years I've worked fully remote. I've built distributed QA teams from scratch: recruiting, onboarding, defining clear grade systems, and setting up KPIs and performance metrics. I run regular 1-on-1s with each team member to align their personal growth with business goals. When this is done right, you get a team that's self-aware, motivated, and aligned — without constant hand-holding.
+For the last **5+ years** I've worked fully remote. I've built distributed QA teams from scratch: recruiting, onboarding, defining clear grade systems, and setting up KPIs and performance metrics. I run regular 1-on-1s with each team member to align their personal growth with business goals. When this is done right, you get a team that's self-aware, motivated, and aligned — without constant hand-holding.
 
-Over the last 2+ years I've been working as a solution architect. On select projects I lead full R&D teams — developers, DevOps, QA — and own the full scope: technology decisions, roadmap, architecture. AI is a big part of this. I work daily with Claude Code and the Anthropic stack, build with LangChain and LangGraph, and write in Python and/or TypeScript. I've designed and built AI-powered products, created agent workflows, implemented complex ETL pipelines with layered multi-hop architecture, and solved hard integration problems — hands-on, end to end.
+Over the last **2+ years** I've been working as a solution architect. On select projects I lead full R&D teams — developers, DevOps, QA — and own the full scope: technology decisions, roadmap, architecture. AI is a big part of this. I work daily with **Claude Code** and the Anthropic stack, build with **LangChain** and **LangGraph**, and write in Python and/or TypeScript. I've designed and built AI-powered products, created agent workflows, implemented complex ETL pipelines with layered multi-hop architecture, and solved hard integration problems — hands-on, end to end.
 
-**What Can I Help You With?**
+### What Can I Help You With?
 
-- Building end-to-end AI-powered products and applications — from architecture to delivery
-- Automating workflows and introducing AI into existing engineering processes and teams
-- Implementing, deploying, and managing custom AI tooling (LangChain, LangGraph, Anthropic stack)
-- AI coding — using AI tools to accelerate development and integrate them into engineering workflows
-- Building and managing remote engineering teams — hiring, onboarding, grade systems, KPIs, and performance frameworks
-- Data-driven engineering management — setting up the full data flow: from collection and processing to dashboards and analysis, so teams have clear metrics to manage by
-- QA strategy, test automation architecture, DevOps quality gates, and CI/CD integration
+- **Building end-to-end AI-powered products and applications** — from architecture to delivery
+- **Workflow automation and AI adoption** — introducing AI into existing engineering processes and teams
+- **Custom AI tooling** — implementing, deploying, and managing (LangChain, LangGraph, Anthropic stack)
+- **AI coding** — using AI tools to accelerate development and integrate them into engineering workflows
+- **Remote engineering team building** — hiring, onboarding, grade systems, KPIs, and performance frameworks
+- **Data-driven engineering management** — setting up the full data flow: from collection and processing to dashboards and analysis, so teams have clear metrics to manage by
+- **QA strategy and DevOps quality** — test automation architecture, quality gates, and CI/CD integration
 
-**Expertise**
+### Expertise
 
 `Solution Architecture` · `QA Engineering` · `Test Automation Architecture` · `Remote Team Leadership` · `Engineering Management` · `AI-Driven Quality` · `Cloud & DevOps` · `System Design` · `Performance Engineering`
 
-**Industries**
+### Industries
 
 `SaaS` · `AI` · `HealthTech` · `Fintech` · `AR/VR` · `IoT` · `Mobile`
 
@@ -96,16 +96,7 @@ Over the last 2+ years I've been working as a solution architect. On select proj
 
 | Project | Description | Tech Stack | Status |
 |---------|-------------|-----------|--------|
-| **diligence-ops** | Due diligence automation for mergers & acquisitions — streamlining the process with AI | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white) ![LangGraph](https://img.shields.io/badge/-LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white) | Active |
+| **[diligence-ops](https://github.com/alex-alekseenko/diligence-ops)** | Due diligence automation for mergers & acquisitions — streamlining the process with AI | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white) ![LangGraph](https://img.shields.io/badge/-LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white) | Active |
+| **[qa-auto-ts-pw-demo](https://github.com/alex-alekseenko/qa-auto-ts-pw-demo)** | Production-grade E2E automation framework targeting [Plane](https://plane.so) — Page Object Model, custom CLI, Docker, and Allure v3 reporting | ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Playwright](https://img.shields.io/badge/-Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white) ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Allure](https://img.shields.io/badge/-Allure_v3-FF6A00?style=flat-square&logo=qameta&logoColor=white) | Active |
 | *More projects coming soon...* | | | |
-
----
-
-## 📫 Let's Connect
-
-Feel free to reach out for collaboration, consulting, or just to connect:
-
-- 💼 **LinkedIn:** [https://www.linkedin.com/in/alex-alekseenko/](https://www.linkedin.com/in/alex-alekseenko/)
-- 🌐 **Website:** [https://www.alexalekseenko.com/](https://www.alexalekseenko.com/)
-- 📧 **Email:** [a.alekseenko.personal@gmail.com](mailto:a.alekseenko.personal@gmail.com)
 
